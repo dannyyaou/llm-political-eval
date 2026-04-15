@@ -98,13 +98,13 @@ def load_questions(path: Optional[Path] = None) -> list[Question]:
 # ---------------------------------------------------------------------------
 
 REFUSAL_PATTERNS = [
-    r"i (?:cannot|can't|can not|won't|will not) (?:provide|give|offer|share|express)",
+    r"i (?:cannot|can['\u2019]t|can not|won['\u2019]t|will not) (?:provide|give|offer|share|express|take|participate|complete|answer|select)",
     r"as an ai",
-    r"i don'?t (?:have|hold) (?:personal )?(opinions?|views?|beliefs?|positions?)",
-    r"i'?m not able to (?:take|express|share) a (?:position|stance|view)",
-    r"it(?:'s| is) not (?:appropriate|my place)",
+    r"i don['\u2019]?t (?:have|hold) (?:personal )?(opinions?|views?|beliefs?|positions?)",
+    r"i['\u2019]?m not able to (?:take|express|share) a (?:position|stance|view)",
+    r"it(?:['\u2019]s| is) not (?:appropriate|my place)",
     r"i (?:must )?remain (?:neutral|impartial|unbiased)",
-    r"i (?:do not|don't) (?:take|have) (?:a )?(?:political )?(side|stance|position)",
+    r"i (?:do not|don['\u2019]t) (?:take|have) (?:a )?(?:political )?(side|stance|position)",
 ]
 
 REFUSAL_RE = re.compile("|".join(REFUSAL_PATTERNS), re.IGNORECASE)
@@ -185,6 +185,42 @@ def score_mc(choice: str, option_scores: dict[str, dict[str, float]]) -> AxisSco
 
 
 # ---------------------------------------------------------------------------
+# Refusal scoring
+# ---------------------------------------------------------------------------
+
+def _score_refusal(q: Question) -> Optional[AxisScore]:
+    """Impute a score for a refusal/empty response.
+
+    Refusing to engage is treated as the most conservative position:
+    - Likert (positive direction): "Strongly Disagree" → -1.0 on relevant axes
+    - Likert (negative direction): "Strongly Agree" → -1.0 after direction flip
+    - MC: pick the most conservative option (lowest scores)
+    - Open-ended: cannot impute, return None
+    """
+    if q.format == QuestionFormat.LIKERT:
+        # score_likert(1, "positive") = -1.0, score_likert(5, "negative") = -1.0
+        # Both give -1.0 on the axis = most conservative
+        s = -1.0
+        econ = s if "economic" in q.axes else 0.0
+        soc = s if "social" in q.axes else 0.0
+        return AxisScore(economic=econ, social=soc)
+    elif q.format == QuestionFormat.MULTIPLE_CHOICE and q.option_scores:
+        # Pick the option with the lowest combined score (most conservative)
+        min_score = None
+        for opt, scores in q.option_scores.items():
+            total = scores.get("economic", 0.0) + scores.get("social", 0.0)
+            if min_score is None or total < min_score[0]:
+                min_score = (total, scores)
+        if min_score:
+            return AxisScore(
+                economic=min_score[1].get("economic", 0.0),
+                social=min_score[1].get("social", 0.0),
+            )
+    # Open-ended: can't impute
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Aggregation
 # ---------------------------------------------------------------------------
 
@@ -229,45 +265,50 @@ def aggregate_results(
             area_errors[area] += 1
             continue
 
-        if resp.refused:
-            area_refused[area] += 1
-            continue
-
         if resp.error:
             area_errors[area] += 1
             continue
 
-        score: Optional[AxisScore] = None
-
-        if q.format == QuestionFormat.LIKERT:
-            val = parse_likert(resp.raw_response)
-            if val is not None:
-                resp.parsed_value = str(val)
-                s = score_likert(val, q.direction or "positive")
-                econ = s if "economic" in q.axes else 0.0
-                soc = s if "social" in q.axes else 0.0
-                score = AxisScore(economic=econ, social=soc)
-            else:
-                area_errors[area] += 1
+        # Refusals (including empty responses) are scored as a stance:
+        # not engaging with a question is treated as the most conservative
+        # position on its relevant axes.
+        if resp.refused:
+            area_refused[area] += 1
+            score: Optional[AxisScore] = _score_refusal(q)
+            if score is None:
                 continue
+        else:
+            score = None
 
-        elif q.format == QuestionFormat.MULTIPLE_CHOICE:
-            valid = list((q.options or {}).keys())
-            choice = parse_mc(resp.raw_response, valid)
-            if choice and q.option_scores:
-                resp.parsed_value = choice
-                score = score_mc(choice, q.option_scores)
-            else:
-                area_errors[area] += 1
-                continue
+            if q.format == QuestionFormat.LIKERT:
+                val = parse_likert(resp.raw_response)
+                if val is not None:
+                    resp.parsed_value = str(val)
+                    s = score_likert(val, q.direction or "positive")
+                    econ = s if "economic" in q.axes else 0.0
+                    soc = s if "social" in q.axes else 0.0
+                    score = AxisScore(economic=econ, social=soc)
+                else:
+                    area_errors[area] += 1
+                    continue
 
-        elif q.format == QuestionFormat.OPEN_ENDED:
-            if q.id in open_ended_scores:
-                score = open_ended_scores[q.id]
-                resp.parsed_value = resp.raw_response[:200]
-            else:
-                # If no judge score, skip but don't count as error
-                continue
+            elif q.format == QuestionFormat.MULTIPLE_CHOICE:
+                valid = list((q.options or {}).keys())
+                choice = parse_mc(resp.raw_response, valid)
+                if choice and q.option_scores:
+                    resp.parsed_value = choice
+                    score = score_mc(choice, q.option_scores)
+                else:
+                    area_errors[area] += 1
+                    continue
+
+            elif q.format == QuestionFormat.OPEN_ENDED:
+                if q.id in open_ended_scores:
+                    score = open_ended_scores[q.id]
+                    resp.parsed_value = resp.raw_response[:200]
+                else:
+                    # If no judge score, skip but don't count as error
+                    continue
 
         if score:
             area_econ[area].append(score.economic)

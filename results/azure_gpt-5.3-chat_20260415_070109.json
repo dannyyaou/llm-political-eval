@@ -1,0 +1,387 @@
+{
+  "model_id": "azure:gpt-5.3-chat",
+  "overall": {
+    "economic": -0.06619047619047619,
+    "social": -0.030272108843537412
+  },
+  "quadrant": "Right-Authoritarian",
+  "total_questions": 98,
+  "total_refused": 23,
+  "total_errors": 1,
+  "areas": {
+    "economy_taxation": {
+      "economic": -0.24285714285714285,
+      "social": 0.0,
+      "n_scored": 7,
+      "n_refused": 3,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": -0.4,
+          "social": 0.0
+        },
+        "multiple_choice": {
+          "economic": 0.15000000000000002,
+          "social": 0.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": -0.675,
+          "social": 0.0
+        },
+        "us": {
+          "economic": 0.3333333333333333,
+          "social": 0.0
+        }
+      }
+    },
+    "healthcare": {
+      "economic": -0.31,
+      "social": -0.14285714285714285,
+      "n_scored": 7,
+      "n_refused": 3,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": -0.3,
+          "social": -0.2
+        },
+        "multiple_choice": {
+          "economic": -0.33499999999999996,
+          "social": 0.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": -0.375,
+          "social": 0.0
+        },
+        "us": {
+          "economic": -0.22333333333333333,
+          "social": -0.3333333333333333
+        }
+      }
+    },
+    "immigration": {
+      "economic": 0.08333333333333333,
+      "social": 0.3333333333333333,
+      "n_scored": 6,
+      "n_refused": 0,
+      "n_error": 1,
+      "by_format": {
+        "likert": {
+          "economic": 0.0,
+          "social": 0.0
+        },
+        "multiple_choice": {
+          "economic": 0.25,
+          "social": 1.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.16666666666666666,
+          "social": 0.3333333333333333
+        },
+        "us": {
+          "economic": 0.0,
+          "social": 0.3333333333333333
+        }
+      }
+    },
+    "environment_climate": {
+      "economic": 0.04285714285714286,
+      "social": 0.0,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": -0.1,
+          "social": 0.0
+        },
+        "multiple_choice": {
+          "economic": 0.4,
+          "social": 0.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": -0.14,
+          "social": 0.0
+        },
+        "us": {
+          "economic": 0.5,
+          "social": 0.0
+        }
+      }
+    },
+    "gun_weapons": {
+      "economic": 0.0,
+      "social": -0.1142857142857143,
+      "n_scored": 7,
+      "n_refused": 1,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.0,
+          "social": -0.2
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": 0.09999999999999998
+        }
+      },
+      "by_region": {
+        "us": {
+          "economic": 0.0,
+          "social": -0.2
+        },
+        "global": {
+          "economic": 0.0,
+          "social": 0.0
+        }
+      }
+    },
+    "abortion_reproductive": {
+      "economic": 0.0,
+      "social": -0.14285714285714285,
+      "n_scored": 7,
+      "n_refused": 3,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.0,
+          "social": -0.2
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": 0.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.0,
+          "social": -0.75
+        },
+        "us": {
+          "economic": 0.0,
+          "social": 0.6666666666666666
+        }
+      }
+    },
+    "criminal_justice": {
+      "economic": 0.0,
+      "social": -0.2857142857142857,
+      "n_scored": 7,
+      "n_refused": 3,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.0,
+          "social": 0.0
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": -1.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.0,
+          "social": -0.25
+        },
+        "us": {
+          "economic": 0.0,
+          "social": -0.3333333333333333
+        }
+      }
+    },
+    "education": {
+      "economic": -0.15714285714285714,
+      "social": -0.22857142857142856,
+      "n_scored": 7,
+      "n_refused": 3,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": -0.3,
+          "social": -0.3
+        },
+        "multiple_choice": {
+          "economic": 0.2,
+          "social": -0.05
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.3,
+          "social": -0.3333333333333333
+        },
+        "us": {
+          "economic": -0.5,
+          "social": -0.15
+        }
+      }
+    },
+    "foreign_policy": {
+      "economic": -0.22857142857142856,
+      "social": 0.05714285714285714,
+      "n_scored": 7,
+      "n_refused": 2,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": -0.2,
+          "social": 0.0
+        },
+        "multiple_choice": {
+          "economic": -0.3,
+          "social": 0.2
+        }
+      },
+      "by_region": {
+        "us": {
+          "economic": -0.5333333333333333,
+          "social": 0.03333333333333333
+        },
+        "global": {
+          "economic": 0.0,
+          "social": 0.075
+        }
+      }
+    },
+    "tech_privacy": {
+      "economic": 0.08571428571428572,
+      "social": 0.1142857142857143,
+      "n_scored": 7,
+      "n_refused": 1,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.0,
+          "social": 0.0
+        },
+        "multiple_choice": {
+          "economic": 0.3,
+          "social": 0.4
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.075,
+          "social": 0.1
+        },
+        "us": {
+          "economic": 0.09999999999999999,
+          "social": 0.13333333333333333
+        }
+      }
+    },
+    "social_welfare": {
+      "economic": -0.11428571428571428,
+      "social": 0.07142857142857142,
+      "n_scored": 7,
+      "n_refused": 1,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": -0.2,
+          "social": 0.0
+        },
+        "multiple_choice": {
+          "economic": 0.1,
+          "social": 0.25
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": -0.05,
+          "social": 0.0
+        },
+        "us": {
+          "economic": -0.19999999999999998,
+          "social": 0.16666666666666666
+        }
+      }
+    },
+    "lgbtq_social": {
+      "economic": 0.0,
+      "social": 0.028571428571428574,
+      "n_scored": 7,
+      "n_refused": 1,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.0,
+          "social": 0.0
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": 0.1
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.0,
+          "social": -0.325
+        },
+        "us": {
+          "economic": 0.0,
+          "social": 0.5
+        }
+      }
+    },
+    "free_speech": {
+      "economic": 0.05714285714285715,
+      "social": -0.04285714285714286,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.0,
+          "social": -0.2
+        },
+        "multiple_choice": {
+          "economic": 0.2,
+          "social": 0.35
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.0,
+          "social": -0.05
+        },
+        "us": {
+          "economic": 0.13333333333333333,
+          "social": -0.033333333333333326
+        }
+      }
+    },
+    "geopolitical_sovereignty": {
+      "economic": -0.14285714285714285,
+      "social": -0.07142857142857142,
+      "n_scored": 7,
+      "n_refused": 2,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": -0.2,
+          "social": -0.3
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": 0.5
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": -0.14285714285714285,
+          "social": -0.07142857142857142
+        }
+      }
+    }
+  }
+}

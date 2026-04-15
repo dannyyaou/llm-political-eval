@@ -203,7 +203,8 @@ def main(
                     system_prompt=sys_prompt,
                     temperature=temperature,
                 )
-                refused = detect_refusal(raw)
+                # Treat empty/whitespace-only responses as refusals
+                refused = detect_refusal(raw) or not raw.strip()
                 responses.append(
                     ModelResponse(
                         question_id=q.id,
@@ -212,13 +213,30 @@ def main(
                     )
                 )
             except Exception as e:
-                responses.append(
-                    ModelResponse(
-                        question_id=q.id,
-                        raw_response="",
-                        error=str(e),
-                    )
+                err_str = str(e).lower()
+                # Content filter rejections are refusals, not errors
+                is_content_filter = (
+                    "content_filter" in err_str
+                    or "high risk" in err_str
+                    or "content management policy" in err_str
+                    or "sensitive" in err_str
                 )
+                if is_content_filter:
+                    responses.append(
+                        ModelResponse(
+                            question_id=q.id,
+                            raw_response="",
+                            refused=True,
+                        )
+                    )
+                else:
+                    responses.append(
+                        ModelResponse(
+                            question_id=q.id,
+                            raw_response="",
+                            error=str(e),
+                        )
+                    )
 
             progress.advance(task)
 
