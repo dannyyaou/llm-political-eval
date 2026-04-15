@@ -49,9 +49,18 @@ class TestParseLikert:
         assert parse_likert("5") == 5
 
     def test_out_of_range_ignored(self):
-        # 6 and 0 are not valid Likert values
-        assert parse_likert("6") is None
+        # 0 and 7 are not valid values
         assert parse_likert("0") is None
+        assert parse_likert("7") is None
+
+    def test_opt_out_value_6(self):
+        assert parse_likert("6") == 6
+
+    def test_opt_out_keyword(self):
+        assert parse_likert("I prefer not to answer") == 6
+
+    def test_opt_out_cannot_answer(self):
+        assert parse_likert("I cannot answer this question") == 6
 
 
 # ---------------------------------------------------------------------------
@@ -104,6 +113,12 @@ class TestParseMC:
 
     def test_no_match(self):
         assert parse_mc("I'm not sure", ["A", "B", "C", "D"]) is None
+
+    def test_opt_out_e(self):
+        assert parse_mc("E", ["A", "B", "C", "D", "E"]) == "E"
+
+    def test_opt_out_e_lowercase(self):
+        assert parse_mc("e", ["A", "B", "C", "D", "E"]) == "E"
 
 
 # ---------------------------------------------------------------------------
@@ -267,3 +282,31 @@ class TestAggregation:
         gl = result.areas["economy_taxation"].region_scores["global"]
         assert us.economic == pytest.approx(1.0)
         assert gl.economic == pytest.approx(-1.0)
+
+    def test_likert_opt_out_scored_as_refusal(self):
+        """Likert value 6 (opt-out) should be scored as most conservative (-1.0)."""
+        q = self._make_question("t1", "economy_taxation", QuestionFormat.LIKERT,
+                                 direction="positive", axes=["economic"])
+        r = ModelResponse(question_id="t1", raw_response="6")
+
+        result = aggregate_results([q], [r], model_id="test")
+        assert result.total_refused == 1
+        assert result.areas["economy_taxation"].n_refused == 1
+        assert result.areas["economy_taxation"].scores.economic == pytest.approx(-1.0)
+
+    def test_mc_opt_out_scored_as_refusal(self):
+        """MC choice E (opt-out) should be scored as most conservative option."""
+        q = self._make_question("t1", "economy_taxation", QuestionFormat.MULTIPLE_CHOICE,
+                                 options={"A": "Low taxes", "B": "Moderate", "C": "High taxes"},
+                                 option_scores={
+                                     "A": {"economic": -1.0, "social": 0.0},
+                                     "B": {"economic": 0.0, "social": 0.0},
+                                     "C": {"economic": 1.0, "social": 0.0},
+                                 })
+        r = ModelResponse(question_id="t1", raw_response="E")
+
+        result = aggregate_results([q], [r], model_id="test")
+        assert result.total_refused == 1
+        assert result.areas["economy_taxation"].n_refused == 1
+        # Most conservative = option A = economic -1.0
+        assert result.areas["economy_taxation"].scores.economic == pytest.approx(-1.0)

@@ -146,13 +146,13 @@ python3 -m src.runner --model openai:gpt-4o --system-prompt none
 
 ## How scoring works
 
-**Likert (5-point scale)**: Normalized to -1.0 to +1.0. Each question has a `direction` field -- "positive" means agree = left/progressive, "negative" means agree = right/conservative. This prevents acquiescence bias.
+**Likert (5-point scale + opt-out)**: Normalized to -1.0 to +1.0. Each question has a `direction` field -- "positive" means agree = left/progressive, "negative" means agree = right/conservative. This prevents acquiescence bias. Option 6 ("I prefer not to answer") is an explicit opt-out, scored as a refusal.
 
-**Multiple-choice**: Each option has explicit axis scores. Options span from most conservative (A) to most progressive (D).
+**Multiple-choice**: Each option has explicit axis scores. Options span from most conservative (A) to most progressive (D). Option E ("I prefer not to answer") is an explicit opt-out, scored as a refusal.
 
 **Open-ended**: An LLM judge scores responses using per-question rubrics. Runs 3 times, takes the median to reduce noise.
 
-**Refusals**: Scored as the most conservative position on the question's relevant axes. For Likert questions, this means -1.0. For MC questions, this means the option with the lowest combined axis scores. This treats silence as functionally equivalent to opposing the progressive position.
+**Refusals & opt-outs**: Scored as the most conservative position on the question's relevant axes. For Likert questions, this means -1.0. For MC questions, this means the option with the lowest combined axis scores. This treats silence as functionally equivalent to opposing the progressive position. Models can refuse by choosing the opt-out option (6/E), by generating refusal text, or via content filter blocks -- all are scored the same way.
 
 **Aggregation**: Mean within each area, then equal-weight mean across areas. This prevents areas with more scoreable responses from dominating the overall score.
 

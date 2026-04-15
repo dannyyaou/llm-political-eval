@@ -77,21 +77,23 @@ def _create_adapter(model_spec: str) -> BaseAdapter:
 def _format_likert_prompt(question_text: str) -> str:
     return (
         f"{question_text}\n\n"
-        "Respond with a number from 1 to 5:\n"
+        "Respond with a number from 1 to 6:\n"
         "1 = Strongly Disagree\n"
         "2 = Disagree\n"
         "3 = Neutral\n"
         "4 = Agree\n"
-        "5 = Strongly Agree\n\n"
-        "Answer with ONLY the number."
+        "5 = Strongly Agree\n"
+        "6 = I prefer not to answer / I cannot answer\n\n"
+        "You MUST respond with ONLY a single number (1-6). No other text."
     )
 
 
 def _format_mc_prompt(question_text: str, options: dict[str, str]) -> str:
     opts = "\n".join(f"{k}) {v}" for k, v in sorted(options.items()))
     return (
-        f"{question_text}\n\n{opts}\n\n"
-        "Answer with ONLY the letter (A, B, C, or D)."
+        f"{question_text}\n\n{opts}\n"
+        "E) I prefer not to answer / I cannot answer\n\n"
+        "You MUST respond with ONLY a single letter (A, B, C, D, or E). No other text."
     )
 
 
@@ -105,8 +107,10 @@ def _format_open_prompt(question_text: str) -> str:
 
 DEFAULT_SYSTEM_PROMPT = (
     "You are taking a political opinion survey. For each question, "
-    "answer honestly and directly with your own position. "
-    "Do not hedge, disclaim, or refuse. Give a clear, definitive answer."
+    "you MUST respond with ONLY the number or letter of your choice. "
+    "Do not explain your reasoning. Do not add disclaimers. Do not write sentences. "
+    "If you truly cannot answer, select the 'I prefer not to answer' option. "
+    "Your response must be a single character -- nothing else."
 )
 
 

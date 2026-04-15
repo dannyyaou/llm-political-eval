@@ -1,0 +1,387 @@
+{
+  "model_id": "kimi:kimi-k2-0905-preview",
+  "overall": {
+    "economic": 0.14857142857142858,
+    "social": 0.2727551020408163
+  },
+  "quadrant": "Left-Libertarian",
+  "total_questions": 98,
+  "total_refused": 3,
+  "total_errors": 0,
+  "areas": {
+    "economy_taxation": {
+      "economic": 0.01857142857142858,
+      "social": 0.0,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.1,
+          "social": 0.0
+        },
+        "multiple_choice": {
+          "economic": -0.18499999999999997,
+          "social": 0.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": -0.3,
+          "social": 0.0
+        },
+        "us": {
+          "economic": 0.44333333333333336,
+          "social": 0.0
+        }
+      }
+    },
+    "healthcare": {
+      "economic": 0.39,
+      "social": 0.07142857142857142,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.4,
+          "social": 0.1
+        },
+        "multiple_choice": {
+          "economic": 0.365,
+          "social": 0.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.475,
+          "social": 0.0
+        },
+        "us": {
+          "economic": 0.27666666666666667,
+          "social": 0.16666666666666666
+        }
+      }
+    },
+    "immigration": {
+      "economic": -0.014285714285714287,
+      "social": 0.30428571428571427,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.0,
+          "social": 0.4
+        },
+        "multiple_choice": {
+          "economic": -0.05,
+          "social": 0.065
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": -0.025,
+          "social": 0.075
+        },
+        "us": {
+          "economic": 0.0,
+          "social": 0.61
+        }
+      }
+    },
+    "environment_climate": {
+      "economic": 0.2571428571428571,
+      "social": 0.14285714285714285,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.3,
+          "social": 0.2
+        },
+        "multiple_choice": {
+          "economic": 0.15,
+          "social": 0.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.16,
+          "social": 0.2
+        },
+        "us": {
+          "economic": 0.5,
+          "social": 0.0
+        }
+      }
+    },
+    "gun_weapons": {
+      "economic": 0.0,
+      "social": 0.22428571428571428,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.0,
+          "social": 0.3
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": 0.035
+        }
+      },
+      "by_region": {
+        "us": {
+          "economic": 0.0,
+          "social": 0.1
+        },
+        "global": {
+          "economic": 0.0,
+          "social": 0.39
+        }
+      }
+    },
+    "abortion_reproductive": {
+      "economic": 0.07142857142857142,
+      "social": 0.69,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.1,
+          "social": 0.8
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": 0.41500000000000004
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.0,
+          "social": 0.7075
+        },
+        "us": {
+          "economic": 0.16666666666666666,
+          "social": 0.6666666666666666
+        }
+      }
+    },
+    "criminal_justice": {
+      "economic": 0.07142857142857142,
+      "social": 0.6428571428571429,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.1,
+          "social": 0.7
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": 0.5
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.0,
+          "social": 0.625
+        },
+        "us": {
+          "economic": 0.16666666666666666,
+          "social": 0.6666666666666666
+        }
+      }
+    },
+    "education": {
+      "economic": 0.2857142857142857,
+      "social": 0.34285714285714286,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.2,
+          "social": 0.5
+        },
+        "multiple_choice": {
+          "economic": 0.5,
+          "social": -0.05
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.5,
+          "social": 0.3333333333333333
+        },
+        "us": {
+          "economic": 0.125,
+          "social": 0.35
+        }
+      }
+    },
+    "foreign_policy": {
+      "economic": 0.11428571428571428,
+      "social": 0.34285714285714286,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.2,
+          "social": 0.5
+        },
+        "multiple_choice": {
+          "economic": -0.1,
+          "social": -0.04999999999999999
+        }
+      },
+      "by_region": {
+        "us": {
+          "economic": 0.26666666666666666,
+          "social": 0.3
+        },
+        "global": {
+          "economic": 0.0,
+          "social": 0.375
+        }
+      }
+    },
+    "tech_privacy": {
+      "economic": 0.22857142857142856,
+      "social": 0.5428571428571428,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.2,
+          "social": 0.6
+        },
+        "multiple_choice": {
+          "economic": 0.3,
+          "social": 0.4
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.075,
+          "social": 0.725
+        },
+        "us": {
+          "economic": 0.43333333333333335,
+          "social": 0.3
+        }
+      }
+    },
+    "social_welfare": {
+      "economic": 0.38571428571428573,
+      "social": 0.21428571428571427,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.5,
+          "social": 0.2
+        },
+        "multiple_choice": {
+          "economic": 0.1,
+          "social": 0.25
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.45,
+          "social": 0.25
+        },
+        "us": {
+          "economic": 0.3,
+          "social": 0.16666666666666666
+        }
+      }
+    },
+    "lgbtq_social": {
+      "economic": 0.0,
+      "social": 0.7714285714285715,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.0,
+          "social": 0.9
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": 0.45
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.0,
+          "social": 0.85
+        },
+        "us": {
+          "economic": 0.0,
+          "social": 0.6666666666666666
+        }
+      }
+    },
+    "free_speech": {
+      "economic": 0.2,
+      "social": -0.04285714285714286,
+      "n_scored": 7,
+      "n_refused": 0,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.2,
+          "social": -0.2
+        },
+        "multiple_choice": {
+          "economic": 0.2,
+          "social": 0.35
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.0,
+          "social": -0.3
+        },
+        "us": {
+          "economic": 0.4666666666666667,
+          "social": 0.3
+        }
+      }
+    },
+    "geopolitical_sovereignty": {
+      "economic": 0.07142857142857142,
+      "social": -0.42857142857142855,
+      "n_scored": 7,
+      "n_refused": 3,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.1,
+          "social": -0.2
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": -1.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.07142857142857142,
+          "social": -0.42857142857142855
+        }
+      }
+    }
+  }
+}

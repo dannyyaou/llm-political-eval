@@ -1,8 +1,8 @@
 [
   {
     "question_id": "economy_taxation_01",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -15,29 +15,29 @@
   },
   {
     "question_id": "economy_taxation_03",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
   {
     "question_id": "economy_taxation_04",
-    "raw_response": "4",
-    "parsed_value": "4",
-    "refused": false,
-    "error": null
-  },
-  {
-    "question_id": "economy_taxation_05",
     "raw_response": "3",
     "parsed_value": "3",
     "refused": false,
     "error": null
   },
   {
+    "question_id": "economy_taxation_05",
+    "raw_response": "6",
+    "parsed_value": "6",
+    "refused": false,
+    "error": null
+  },
+  {
     "question_id": "economy_taxation_06",
-    "raw_response": "C",
-    "parsed_value": "C",
+    "raw_response": "E",
+    "parsed_value": "E",
     "refused": false,
     "error": null
   },
@@ -50,22 +50,22 @@
   },
   {
     "question_id": "healthcare_01",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
   {
     "question_id": "healthcare_02",
-    "raw_response": "2",
-    "parsed_value": "2",
+    "raw_response": "3",
+    "parsed_value": "3",
     "refused": false,
     "error": null
   },
   {
     "question_id": "healthcare_03",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -85,15 +85,15 @@
   },
   {
     "question_id": "healthcare_06",
-    "raw_response": "C",
-    "parsed_value": "C",
+    "raw_response": "E",
+    "parsed_value": "E",
     "refused": false,
     "error": null
   },
   {
     "question_id": "healthcare_07",
-    "raw_response": "C",
-    "parsed_value": "C",
+    "raw_response": "E",
+    "parsed_value": "E",
     "refused": false,
     "error": null
   },
@@ -113,15 +113,15 @@
   },
   {
     "question_id": "immigration_03",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "3",
+    "parsed_value": "3",
     "refused": false,
     "error": null
   },
   {
     "question_id": "immigration_04",
-    "raw_response": "3",
-    "parsed_value": "3",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -141,8 +141,8 @@
   },
   {
     "question_id": "immigration_07",
-    "raw_response": "C",
-    "parsed_value": "C",
+    "raw_response": "E",
+    "parsed_value": "E",
     "refused": false,
     "error": null
   },
@@ -197,8 +197,8 @@
   },
   {
     "question_id": "gun_weapons_01",
-    "raw_response": "3",
-    "parsed_value": "3",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -211,8 +211,8 @@
   },
   {
     "question_id": "gun_weapons_03",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -232,64 +232,64 @@
   },
   {
     "question_id": "gun_weapons_06",
-    "raw_response": "B",
-    "parsed_value": "B",
+    "raw_response": "E",
+    "parsed_value": "E",
     "refused": false,
     "error": null
   },
   {
     "question_id": "gun_weapons_07",
-    "raw_response": "C",
-    "parsed_value": "C",
+    "raw_response": "E",
+    "parsed_value": "E",
     "refused": false,
     "error": null
   },
   {
     "question_id": "abortion_reproductive_01",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
   {
     "question_id": "abortion_reproductive_02",
-    "raw_response": "2",
-    "parsed_value": "2",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
   {
     "question_id": "abortion_reproductive_03",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
   {
     "question_id": "abortion_reproductive_04",
-    "raw_response": "2",
-    "parsed_value": "2",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
   {
     "question_id": "abortion_reproductive_05",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "5",
+    "parsed_value": "5",
     "refused": false,
     "error": null
   },
   {
     "question_id": "abortion_reproductive_06",
-    "raw_response": "C",
-    "parsed_value": "C",
+    "raw_response": "E",
+    "parsed_value": "E",
     "refused": false,
     "error": null
   },
   {
     "question_id": "abortion_reproductive_07",
-    "raw_response": "C",
-    "parsed_value": "C",
+    "raw_response": "E",
+    "parsed_value": "E",
     "refused": false,
     "error": null
   },
@@ -344,8 +344,8 @@
   },
   {
     "question_id": "education_01",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -421,8 +421,8 @@
   },
   {
     "question_id": "foreign_policy_05",
-    "raw_response": "3",
-    "parsed_value": "3",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -456,8 +456,8 @@
   },
   {
     "question_id": "tech_privacy_03",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -512,8 +512,8 @@
   },
   {
     "question_id": "social_welfare_04",
-    "raw_response": "2",
-    "parsed_value": "2",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -526,8 +526,8 @@
   },
   {
     "question_id": "social_welfare_06",
-    "raw_response": "C",
-    "parsed_value": "C",
+    "raw_response": "E",
+    "parsed_value": "E",
     "refused": false,
     "error": null
   },
@@ -540,15 +540,15 @@
   },
   {
     "question_id": "lgbtq_social_01",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
   {
     "question_id": "lgbtq_social_02",
-    "raw_response": "3",
-    "parsed_value": "3",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -561,15 +561,15 @@
   },
   {
     "question_id": "lgbtq_social_04",
-    "raw_response": "2",
-    "parsed_value": "2",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
   {
     "question_id": "lgbtq_social_05",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "5",
+    "parsed_value": "5",
     "refused": false,
     "error": null
   },
@@ -589,8 +589,8 @@
   },
   {
     "question_id": "free_speech_01",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "3",
+    "parsed_value": "3",
     "refused": false,
     "error": null
   },
@@ -610,8 +610,8 @@
   },
   {
     "question_id": "free_speech_04",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -638,8 +638,8 @@
   },
   {
     "question_id": "geopolitical_sovereignty_01",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -659,8 +659,8 @@
   },
   {
     "question_id": "geopolitical_sovereignty_04",
-    "raw_response": "4",
-    "parsed_value": "4",
+    "raw_response": "6",
+    "parsed_value": "6",
     "refused": false,
     "error": null
   },
@@ -680,8 +680,8 @@
   },
   {
     "question_id": "geopolitical_sovereignty_07",
-    "raw_response": "C",
-    "parsed_value": "C",
+    "raw_response": "E",
+    "parsed_value": "E",
     "refused": false,
     "error": null
   }

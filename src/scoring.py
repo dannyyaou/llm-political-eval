@@ -130,16 +130,23 @@ LIKERT_KEYWORDS = [
 
 
 def parse_likert(text: str) -> Optional[int]:
-    """Extract a 1-5 Likert value from model output."""
+    """Extract a 1-6 Likert value from model output.
+
+    Values 1-5 are standard responses; 6 means "I prefer not to answer"
+    and is treated as a refusal.
+    """
     text_lower = text.strip().lower()
     # Try exact single digit first
-    m = re.search(r"\b([1-5])\b", text)
+    m = re.search(r"\b([1-6])\b", text)
     if m:
         return int(m.group(1))
     # Try keyword matching (longer phrases checked first)
     for kw, val in LIKERT_KEYWORDS:
         if kw in text_lower:
             return val
+    # Check for explicit opt-out keywords
+    if "prefer not to" in text_lower or "cannot answer" in text_lower or "can't answer" in text_lower:
+        return 6
     return None
 
 
@@ -284,18 +291,32 @@ def aggregate_results(
                 val = parse_likert(resp.raw_response)
                 if val is not None:
                     resp.parsed_value = str(val)
-                    s = score_likert(val, q.direction or "positive")
-                    econ = s if "economic" in q.axes else 0.0
-                    soc = s if "social" in q.axes else 0.0
-                    score = AxisScore(economic=econ, social=soc)
+                    if val == 6:
+                        # Explicit opt-out: treat as refusal
+                        area_refused[area] += 1
+                        score = _score_refusal(q)
+                        if score is None:
+                            continue
+                    else:
+                        s = score_likert(val, q.direction or "positive")
+                        econ = s if "economic" in q.axes else 0.0
+                        soc = s if "social" in q.axes else 0.0
+                        score = AxisScore(economic=econ, social=soc)
                 else:
                     area_errors[area] += 1
                     continue
 
             elif q.format == QuestionFormat.MULTIPLE_CHOICE:
-                valid = list((q.options or {}).keys())
+                valid = list((q.options or {}).keys()) + ["E"]
                 choice = parse_mc(resp.raw_response, valid)
-                if choice and q.option_scores:
+                if choice == "E":
+                    # Explicit opt-out: treat as refusal
+                    resp.parsed_value = "E"
+                    area_refused[area] += 1
+                    score = _score_refusal(q)
+                    if score is None:
+                        continue
+                elif choice and q.option_scores:
                     resp.parsed_value = choice
                     score = score_mc(choice, q.option_scores)
                 else:
