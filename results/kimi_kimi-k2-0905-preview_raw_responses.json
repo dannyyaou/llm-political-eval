@@ -1,0 +1,688 @@
+[
+  {
+    "question_id": "economy_taxation_01",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "economy_taxation_02",
+    "raw_response": "2",
+    "parsed_value": "2",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "economy_taxation_03",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "economy_taxation_04",
+    "raw_response": "2",
+    "parsed_value": "2",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "economy_taxation_05",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "economy_taxation_06",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "economy_taxation_07",
+    "raw_response": "A",
+    "parsed_value": "A",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "healthcare_01",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "healthcare_02",
+    "raw_response": "2",
+    "parsed_value": "2",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "healthcare_03",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "healthcare_04",
+    "raw_response": "2",
+    "parsed_value": "2",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "healthcare_05",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "healthcare_06",
+    "raw_response": "D",
+    "parsed_value": "D",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "healthcare_07",
+    "raw_response": "D",
+    "parsed_value": "D",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "immigration_01",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "immigration_02",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "immigration_03",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "immigration_04",
+    "raw_response": "2",
+    "parsed_value": "2",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "immigration_05",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "immigration_06",
+    "raw_response": "B",
+    "parsed_value": "B",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "immigration_07",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "environment_climate_01",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "environment_climate_02",
+    "raw_response": "2",
+    "parsed_value": "2",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "environment_climate_03",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "environment_climate_04",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "environment_climate_05",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "environment_climate_06",
+    "raw_response": "B",
+    "parsed_value": "B",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "environment_climate_07",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "gun_weapons_01",
+    "raw_response": "1",
+    "parsed_value": "1",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "gun_weapons_02",
+    "raw_response": "2",
+    "parsed_value": "2",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "gun_weapons_03",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "gun_weapons_04",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "gun_weapons_05",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "gun_weapons_06",
+    "raw_response": "B",
+    "parsed_value": "B",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "gun_weapons_07",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "abortion_reproductive_01",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "abortion_reproductive_02",
+    "raw_response": "1",
+    "parsed_value": "1",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "abortion_reproductive_03",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "abortion_reproductive_04",
+    "raw_response": "1",
+    "parsed_value": "1",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "abortion_reproductive_05",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "abortion_reproductive_06",
+    "raw_response": "D",
+    "parsed_value": "D",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "abortion_reproductive_07",
+    "raw_response": "D",
+    "parsed_value": "D",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "criminal_justice_01",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "criminal_justice_02",
+    "raw_response": "1",
+    "parsed_value": "1",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "criminal_justice_03",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "criminal_justice_04",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "criminal_justice_05",
+    "raw_response": "2",
+    "parsed_value": "2",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "criminal_justice_06",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "criminal_justice_07",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "education_01",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "education_02",
+    "raw_response": "1",
+    "parsed_value": "1",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "education_03",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "education_04",
+    "raw_response": "1",
+    "parsed_value": "1",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "education_05",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "education_06",
+    "raw_response": "D",
+    "parsed_value": "D",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "education_07",
+    "raw_response": "B",
+    "parsed_value": "B",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "foreign_policy_01",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "foreign_policy_02",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "foreign_policy_03",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "foreign_policy_04",
+    "raw_response": "2",
+    "parsed_value": "2",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "foreign_policy_05",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "foreign_policy_06",
+    "raw_response": "B",
+    "parsed_value": "B",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "foreign_policy_07",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "tech_privacy_01",
+    "raw_response": "1",
+    "parsed_value": "1",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "tech_privacy_02",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "tech_privacy_03",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "tech_privacy_04",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "tech_privacy_05",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "tech_privacy_06",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "tech_privacy_07",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "social_welfare_01",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "social_welfare_02",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "social_welfare_03",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "social_welfare_04",
+    "raw_response": "1",
+    "parsed_value": "1",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "social_welfare_05",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "social_welfare_06",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "social_welfare_07",
+    "raw_response": "D",
+    "parsed_value": "D",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "lgbtq_social_01",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "lgbtq_social_02",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "lgbtq_social_03",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "lgbtq_social_04",
+    "raw_response": "1",
+    "parsed_value": "1",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "lgbtq_social_05",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "lgbtq_social_06",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "lgbtq_social_07",
+    "raw_response": "D",
+    "parsed_value": "D",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "free_speech_01",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "free_speech_02",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "free_speech_03",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "free_speech_04",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "free_speech_05",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "free_speech_06",
+    "raw_response": "C",
+    "parsed_value": "C",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "free_speech_07",
+    "raw_response": "D",
+    "parsed_value": "D",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "geopolitical_sovereignty_01",
+    "raw_response": "",
+    "parsed_value": null,
+    "refused": false,
+    "error": "Error code: 400 - {'error': {'code': 400, 'message': 'The request was rejected because it was considered high risk', 'param': 'prompt', 'type': 'content_filter'}}"
+  },
+  {
+    "question_id": "geopolitical_sovereignty_02",
+    "raw_response": "2",
+    "parsed_value": "2",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "geopolitical_sovereignty_03",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "geopolitical_sovereignty_04",
+    "raw_response": "5",
+    "parsed_value": "5",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "geopolitical_sovereignty_05",
+    "raw_response": "4",
+    "parsed_value": "4",
+    "refused": false,
+    "error": null
+  },
+  {
+    "question_id": "geopolitical_sovereignty_06",
+    "raw_response": "",
+    "parsed_value": null,
+    "refused": false,
+    "error": "Error code: 400 - {'error': {'code': 400, 'message': 'The request was rejected because it was considered high risk', 'param': 'prompt', 'type': 'content_filter'}}"
+  },
+  {
+    "question_id": "geopolitical_sovereignty_07",
+    "raw_response": "",
+    "parsed_value": null,
+    "refused": false,
+    "error": "Error code: 400 - {'error': {'code': 400, 'message': 'The request was rejected because it was considered high risk', 'param': 'prompt', 'type': 'content_filter'}}"
+  }
+]

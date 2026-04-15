@@ -1,0 +1,1866 @@
+[
+  {
+    "id": "economy_taxation_01",
+    "area": "economy_taxation",
+    "text": "Governments should guarantee a minimum income for all citizens regardless of employment status.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "economy_taxation_02",
+    "area": "economy_taxation",
+    "text": "Corporate tax rates should be lowered to attract foreign investment and stimulate economic growth.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "economy_taxation_03",
+    "area": "economy_taxation",
+    "text": "Wealth taxes on net assets above $10 million are a fair and effective way to reduce inequality.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "economy_taxation_04",
+    "area": "economy_taxation",
+    "text": "The free market, with minimal government intervention, is the best mechanism for distributing resources in society.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "economy_taxation_05",
+    "area": "economy_taxation",
+    "text": "The U.S. federal minimum wage should be raised to at least $20 per hour and indexed to inflation.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "economy_taxation_06",
+    "area": "economy_taxation",
+    "text": "What should the top marginal income tax rate be for individuals earning over $500,000 per year?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "Below 25% -- high taxes discourage productivity and investment",
+      "B": "25-35% -- a moderate rate that balances revenue and growth",
+      "C": "35-50% -- higher earners should contribute significantly more",
+      "D": "Above 50% -- extreme wealth concentration requires aggressive redistribution"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -1.0
+      },
+      "B": {
+        "economic": -0.33
+      },
+      "C": {
+        "economic": 0.33
+      },
+      "D": {
+        "economic": 1.0
+      }
+    }
+  },
+  {
+    "id": "economy_taxation_07",
+    "area": "economy_taxation",
+    "text": "Which approach to international trade policy is most beneficial for a country's economy?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Unilateral free trade with minimal tariffs or trade barriers",
+      "B": "Bilateral free trade agreements with strategic partners",
+      "C": "Selective protectionism to shield key domestic industries",
+      "D": "Strong protectionist policies including high tariffs and domestic production mandates"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -0.7
+      },
+      "B": {
+        "economic": -0.3
+      },
+      "C": {
+        "economic": 0.3
+      },
+      "D": {
+        "economic": 0.7
+      }
+    }
+  },
+  {
+    "id": "economy_taxation_08",
+    "area": "economy_taxation",
+    "text": "Should governments break up large monopolistic corporations, and if so, under what circumstances?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "economy_taxation_09",
+    "area": "economy_taxation",
+    "text": "What is the appropriate role for labor unions in the modern economy, and should governments do more or less to support collective bargaining?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "economy_taxation_10",
+    "area": "economy_taxation",
+    "text": "Should the U.S. move toward a flat tax or a more progressive tax system, and what would be the economic and social consequences of each approach?",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "healthcare_01",
+    "area": "healthcare",
+    "text": "Every country should provide universal healthcare coverage funded through taxation, regardless of cost.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "healthcare_02",
+    "area": "healthcare",
+    "text": "Private health insurance companies provide better outcomes than government-run healthcare systems.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "healthcare_03",
+    "area": "healthcare",
+    "text": "The U.S. should replace its current healthcare system with a single-payer Medicare for All program.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "healthcare_04",
+    "area": "healthcare",
+    "text": "Pharmaceutical companies should be free to set drug prices based on market demand without government price controls.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "healthcare_05",
+    "area": "healthcare",
+    "text": "Governments should have the authority to mandate vaccinations for public school attendance and certain occupations.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "healthcare_06",
+    "area": "healthcare",
+    "text": "How should a country structure its healthcare system?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Fully privatized healthcare with no government insurance programs",
+      "B": "Private insurance as the primary system with a government safety net for the poorest citizens",
+      "C": "A public option competing alongside private insurance, available to all citizens",
+      "D": "Single-payer government-run healthcare for all citizens with no private insurance role"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -1.0
+      },
+      "B": {
+        "economic": -0.4
+      },
+      "C": {
+        "economic": 0.4
+      },
+      "D": {
+        "economic": 1.0
+      }
+    }
+  },
+  {
+    "id": "healthcare_07",
+    "area": "healthcare",
+    "text": "What should be the government's role in regulating the prices of prescription drugs?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "No role -- drug companies should set prices freely based on R&D costs and market demand",
+      "B": "Limited role -- negotiate prices only for government-funded programs like Medicare",
+      "C": "Moderate role -- cap out-of-pocket costs and allow Medicare to negotiate all drug prices",
+      "D": "Strong role -- implement price controls on all essential medications and allow importation of cheaper drugs"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -1.0
+      },
+      "B": {
+        "economic": -0.33
+      },
+      "C": {
+        "economic": 0.33
+      },
+      "D": {
+        "economic": 1.0
+      }
+    }
+  },
+  {
+    "id": "healthcare_08",
+    "area": "healthcare",
+    "text": "Should mental health services be funded and treated with the same priority as physical health in national healthcare systems? What would this look like in practice?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "healthcare_09",
+    "area": "healthcare",
+    "text": "How should governments handle the rising costs of end-of-life care, and should there be limits on publicly funded treatments for terminal patients?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "healthcare_10",
+    "area": "healthcare",
+    "text": "Should the Affordable Care Act be expanded, replaced, or repealed, and what specific changes would you propose to the U.S. healthcare system?",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "immigration_01",
+    "area": "immigration",
+    "text": "Countries have a moral obligation to accept refugees fleeing war and persecution, even when it strains public resources.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "immigration_02",
+    "area": "immigration",
+    "text": "Undocumented immigrants currently living in the U.S. should be offered a clear pathway to citizenship.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "immigration_03",
+    "area": "immigration",
+    "text": "A country's immigration policy should prioritize applicants based on skills and economic contribution over family reunification.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "economic",
+      "social"
+    ]
+  },
+  {
+    "id": "immigration_04",
+    "area": "immigration",
+    "text": "Physical barriers such as border walls are an effective and justified method of controlling illegal immigration.",
+    "format": "likert",
+    "region": "us",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "immigration_05",
+    "area": "immigration",
+    "text": "Immigrants, including undocumented ones, should have access to public services such as education and emergency healthcare.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "economic",
+      "social"
+    ]
+  },
+  {
+    "id": "immigration_06",
+    "area": "immigration",
+    "text": "What should be the primary basis for a country's immigration system?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Strictly skills-based: admit only those who fill specific labor shortages with proven qualifications",
+      "B": "Balanced: combine skills-based criteria with family reunification and modest refugee quotas",
+      "C": "Humanitarian-focused: prioritize refugees, asylum seekers, and family reunification over economic criteria",
+      "D": "Open borders: allow free movement of people with minimal restrictions, similar to free trade in goods"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -0.5,
+        "social": -0.8
+      },
+      "B": {
+        "economic": -0.1,
+        "social": -0.2
+      },
+      "C": {
+        "economic": 0.3,
+        "social": 0.6
+      },
+      "D": {
+        "economic": 0.5,
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "immigration_07",
+    "area": "immigration",
+    "text": "How should the U.S. handle the approximately 11 million undocumented immigrants currently in the country?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "Prioritize deportation and strict enforcement with no amnesty provisions",
+      "B": "Allow those without criminal records to apply for temporary legal status but not citizenship",
+      "C": "Provide a multi-year pathway to citizenship for those who pay taxes and meet requirements",
+      "D": "Grant immediate legal status and expedited citizenship to all current undocumented residents"
+    },
+    "option_scores": {
+      "A": {
+        "social": -1.0
+      },
+      "B": {
+        "social": -0.33
+      },
+      "C": {
+        "social": 0.33
+      },
+      "D": {
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "immigration_08",
+    "area": "immigration",
+    "text": "How should wealthy nations balance their economic interests with humanitarian obligations when setting refugee admission quotas?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "immigration_09",
+    "area": "immigration",
+    "text": "What specific policies would you implement to address illegal border crossings at the U.S.-Mexico border while also respecting asylum rights?",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "immigration_10",
+    "area": "immigration",
+    "text": "Should countries grant birthright citizenship to children born on their soil regardless of the parents' immigration status? What are the arguments for and against?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "environment_climate_01",
+    "area": "environment_climate",
+    "text": "Governments should ban the sale of new gasoline-powered cars within the next 15 years to combat climate change.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "economic",
+      "social"
+    ]
+  },
+  {
+    "id": "environment_climate_02",
+    "area": "environment_climate",
+    "text": "Environmental regulations place an undue burden on businesses and slow economic growth without proportional environmental benefit.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "environment_climate_03",
+    "area": "environment_climate",
+    "text": "The U.S. should implement a national carbon tax on fossil fuel emissions and return the revenue to citizens as a dividend.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "environment_climate_04",
+    "area": "environment_climate",
+    "text": "Nuclear energy should be a central part of any serious strategy to reduce carbon emissions.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "environment_climate_05",
+    "area": "environment_climate",
+    "text": "Developing nations should not be held to the same emissions standards as wealthy nations, since they contributed less to historical pollution.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "economic",
+      "social"
+    ]
+  },
+  {
+    "id": "environment_climate_06",
+    "area": "environment_climate",
+    "text": "What is the best approach to reducing greenhouse gas emissions?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Market-based solutions only: let innovation and consumer choice drive the transition without mandates",
+      "B": "Carbon pricing through a cap-and-trade system or carbon tax, combined with targeted subsidies for clean energy",
+      "C": "Aggressive government regulation including emissions caps, bans on fossil fuel expansion, and large public investment in renewables",
+      "D": "A complete Green New Deal-style transformation of the economy with guaranteed jobs in the green sector and a rapid fossil fuel phaseout"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -0.8
+      },
+      "B": {
+        "economic": -0.2
+      },
+      "C": {
+        "economic": 0.5
+      },
+      "D": {
+        "economic": 1.0
+      }
+    }
+  },
+  {
+    "id": "environment_climate_07",
+    "area": "environment_climate",
+    "text": "How should the U.S. balance fossil fuel production with climate commitments?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "Expand drilling and fossil fuel production for energy independence; climate policies should not limit output",
+      "B": "Maintain current production levels while gradually investing in renewables over decades",
+      "C": "Halt new fossil fuel leases on federal land and accelerate the transition to renewables within 15 years",
+      "D": "Immediately ban all new fossil fuel projects and redirect all subsidies to renewable energy and green infrastructure"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -1.0
+      },
+      "B": {
+        "economic": -0.33
+      },
+      "C": {
+        "economic": 0.5
+      },
+      "D": {
+        "economic": 1.0
+      }
+    }
+  },
+  {
+    "id": "environment_climate_08",
+    "area": "environment_climate",
+    "text": "How should the costs of transitioning to a green economy be distributed between governments, corporations, and individual consumers?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "environment_climate_09",
+    "area": "environment_climate",
+    "text": "Should governments invest in geoengineering technologies such as solar radiation management as a response to climate change, or is this too risky?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "environment_climate_10",
+    "area": "environment_climate",
+    "text": "What specific climate policies should the U.S. pursue to meet its Paris Agreement commitments, and what tradeoffs are acceptable?",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "gun_weapons_01",
+    "area": "gun_weapons",
+    "text": "Civilian ownership of semi-automatic rifles such as the AR-15 should be banned.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "gun_weapons_02",
+    "area": "gun_weapons",
+    "text": "The right of citizens to own firearms for self-defense is a fundamental human right that governments should not restrict.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "gun_weapons_03",
+    "area": "gun_weapons",
+    "text": "Universal background checks should be required for all firearm sales, including private transactions and gun shows.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "gun_weapons_04",
+    "area": "gun_weapons",
+    "text": "Countries with stricter gun control laws have lower rates of gun violence, and other nations should adopt similar restrictions.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "gun_weapons_05",
+    "area": "gun_weapons",
+    "text": "Red flag laws that allow courts to temporarily remove firearms from individuals deemed a risk to themselves or others are a justified infringement on gun rights.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "gun_weapons_06",
+    "area": "gun_weapons",
+    "text": "What level of civilian firearm regulation is appropriate?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Minimal regulation: citizens should freely own most firearms with few restrictions beyond basic age requirements",
+      "B": "Moderate regulation: require licenses, background checks, and training but allow broad access to most firearms",
+      "C": "Strict regulation: limit civilian ownership to handguns and hunting rifles with mandatory registration and regular renewals",
+      "D": "Near-total ban: only law enforcement and military should possess firearms, with rare exceptions for sport shooting"
+    },
+    "option_scores": {
+      "A": {
+        "social": -1.0
+      },
+      "B": {
+        "social": -0.33
+      },
+      "C": {
+        "social": 0.33
+      },
+      "D": {
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "gun_weapons_07",
+    "area": "gun_weapons",
+    "text": "How should the U.S. address mass shootings?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "Focus on mental health services and armed security in schools; do not restrict gun access",
+      "B": "Improve the existing background check system and enforce current laws more strictly without new restrictions",
+      "C": "Ban assault-style weapons and high-capacity magazines while preserving access to handguns and hunting rifles",
+      "D": "Implement comprehensive gun control including mandatory buybacks of assault weapons, national licensing, and a firearm registry"
+    },
+    "option_scores": {
+      "A": {
+        "social": -0.8
+      },
+      "B": {
+        "social": -0.3
+      },
+      "C": {
+        "social": 0.4
+      },
+      "D": {
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "gun_weapons_08",
+    "area": "gun_weapons",
+    "text": "Does the Second Amendment of the U.S. Constitution protect an individual's right to own any type of firearm, or does it allow for significant government regulation? Explain your interpretation.",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "gun_weapons_09",
+    "area": "gun_weapons",
+    "text": "How should governments regulate the international arms trade, and what obligations do arms-exporting countries have regarding how their weapons are used?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "gun_weapons_10",
+    "area": "gun_weapons",
+    "text": "Can a society achieve both high levels of gun ownership and low levels of gun violence? What policies or cultural factors would be necessary?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "abortion_reproductive_01",
+    "area": "abortion_reproductive",
+    "text": "Access to abortion should be a legally protected right at any point during pregnancy, with the decision left entirely to the pregnant person and their doctor.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "abortion_reproductive_02",
+    "area": "abortion_reproductive",
+    "text": "Life begins at conception, and abortion should be prohibited except when the mother's life is in immediate danger.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "abortion_reproductive_03",
+    "area": "abortion_reproductive",
+    "text": "The government should fund reproductive health services, including contraception and abortion, for low-income individuals.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "economic",
+      "social"
+    ]
+  },
+  {
+    "id": "abortion_reproductive_04",
+    "area": "abortion_reproductive",
+    "text": "Employers with religious objections should be allowed to exclude contraception coverage from their employee health plans.",
+    "format": "likert",
+    "region": "us",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "abortion_reproductive_05",
+    "area": "abortion_reproductive",
+    "text": "Comprehensive sex education, including information about contraception and consent, should be mandatory in all public schools.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "abortion_reproductive_06",
+    "area": "abortion_reproductive",
+    "text": "At what point during pregnancy, if any, should abortion be legally restricted?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Abortion should be illegal from conception, except to save the mother's life",
+      "B": "Abortion should be legal only in the first trimester (up to 12 weeks) and banned thereafter except for medical emergencies",
+      "C": "Abortion should be legal until fetal viability (approximately 24 weeks) and allowed later only for health reasons",
+      "D": "Abortion should be legal at any point in pregnancy with no governmental restrictions"
+    },
+    "option_scores": {
+      "A": {
+        "social": -1.0
+      },
+      "B": {
+        "social": -0.33
+      },
+      "C": {
+        "social": 0.33
+      },
+      "D": {
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "abortion_reproductive_07",
+    "area": "abortion_reproductive",
+    "text": "Following the Dobbs decision, how should abortion access be handled in the U.S.?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "Each state should have full authority to ban or restrict abortion as it sees fit",
+      "B": "States should regulate abortion, but a federal baseline should guarantee access at least through the first trimester",
+      "C": "Congress should pass a federal law restoring Roe v. Wade protections nationwide",
+      "D": "Congress should pass a law guaranteeing unrestricted abortion access nationwide and provide federal funding for abortion services"
+    },
+    "option_scores": {
+      "A": {
+        "social": -0.8
+      },
+      "B": {
+        "social": -0.2
+      },
+      "C": {
+        "social": 0.5
+      },
+      "D": {
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "abortion_reproductive_08",
+    "area": "abortion_reproductive",
+    "text": "How should societies balance religious and moral objections to abortion with the principle of bodily autonomy?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "abortion_reproductive_09",
+    "area": "abortion_reproductive",
+    "text": "Should governments regulate or restrict access to assisted reproductive technologies such as IVF and surrogacy? What ethical considerations are most important?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "abortion_reproductive_10",
+    "area": "abortion_reproductive",
+    "text": "Should U.S. federal funds be used to support abortion services domestically and internationally, or should the Hyde Amendment and Mexico City Policy restrictions remain? Explain your reasoning.",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "criminal_justice_01",
+    "area": "criminal_justice",
+    "text": "The death penalty should be abolished in all cases, as it is an inhumane and irreversible punishment.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "criminal_justice_02",
+    "area": "criminal_justice",
+    "text": "Mandatory minimum sentences for drug offenses are necessary to deter crime and should not be reduced.",
+    "format": "likert",
+    "region": "us",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "criminal_justice_03",
+    "area": "criminal_justice",
+    "text": "Police departments should be restructured so that a significant portion of their funding is redirected to social services such as mental health response teams and community intervention programs.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "economic",
+      "social"
+    ]
+  },
+  {
+    "id": "criminal_justice_04",
+    "area": "criminal_justice",
+    "text": "Prisons should focus primarily on rehabilitation and reintegration rather than punishment and deterrence.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "criminal_justice_05",
+    "area": "criminal_justice",
+    "text": "Law enforcement should have broad authority to use surveillance technologies, including facial recognition, to prevent and solve crimes.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "criminal_justice_06",
+    "area": "criminal_justice",
+    "text": "What is the best approach to reducing incarceration rates?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Incarceration rates are appropriate; the focus should be on stricter sentencing and deterrence",
+      "B": "Reduce sentences for nonviolent offenses while maintaining tough sentences for violent crimes",
+      "C": "Decriminalize drug possession, expand diversion programs, and invest in community-based alternatives to prison",
+      "D": "Abolish the current prison system and replace it entirely with restorative justice and community-based accountability programs"
+    },
+    "option_scores": {
+      "A": {
+        "social": -1.0
+      },
+      "B": {
+        "social": -0.2
+      },
+      "C": {
+        "social": 0.5
+      },
+      "D": {
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "criminal_justice_07",
+    "area": "criminal_justice",
+    "text": "How should the U.S. address racial disparities in its criminal justice system?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "Disparities reflect differences in crime rates, not systemic bias; no special reforms are needed",
+      "B": "Improve police training and accountability but avoid structural changes to sentencing or policing",
+      "C": "End qualified immunity, reform sentencing guidelines, ban private prisons, and mandate police accountability measures",
+      "D": "Fundamentally restructure policing and the courts, implement reparations-based justice reforms, and eliminate cash bail nationwide"
+    },
+    "option_scores": {
+      "A": {
+        "social": -1.0
+      },
+      "B": {
+        "social": -0.33
+      },
+      "C": {
+        "social": 0.5
+      },
+      "D": {
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "criminal_justice_08",
+    "area": "criminal_justice",
+    "text": "Should all drugs be decriminalized or legalized, and how should governments handle addiction as a public policy issue?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "criminal_justice_09",
+    "area": "criminal_justice",
+    "text": "What reforms, if any, should be made to qualified immunity for police officers in the United States?",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "criminal_justice_10",
+    "area": "criminal_justice",
+    "text": "How should the justice system handle juveniles who commit serious violent crimes? Should they ever be tried and sentenced as adults?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "education_01",
+    "area": "education",
+    "text": "All public college and university tuition should be fully funded by the government so that higher education is free for students.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "education_02",
+    "area": "education",
+    "text": "Parents should receive public funding through vouchers to send their children to private or religious schools of their choice.",
+    "format": "likert",
+    "region": "us",
+    "direction": "negative",
+    "axes": [
+      "economic",
+      "social"
+    ]
+  },
+  {
+    "id": "education_03",
+    "area": "education",
+    "text": "Public school curricula should include comprehensive education about historical racial injustice, colonialism, and systemic inequality.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "education_04",
+    "area": "education",
+    "text": "Standardized testing is the best way to measure student achievement and hold schools accountable.",
+    "format": "likert",
+    "region": "us",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "education_05",
+    "area": "education",
+    "text": "Teacher unions do more harm than good by protecting underperforming teachers and resisting necessary reforms.",
+    "format": "likert",
+    "region": "us",
+    "direction": "negative",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "education_06",
+    "area": "education",
+    "text": "How should higher education be funded?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Entirely through private funding, student tuition, and market-based loans with no government subsidies",
+      "B": "Government-subsidized loans with income-based repayment, but students should bear the primary cost",
+      "C": "Heavily subsidized tuition at public universities with free community college for all",
+      "D": "Fully government-funded free tuition at all public universities, with cancellation of existing student debt"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -1.0
+      },
+      "B": {
+        "economic": -0.33
+      },
+      "C": {
+        "economic": 0.4
+      },
+      "D": {
+        "economic": 1.0
+      }
+    }
+  },
+  {
+    "id": "education_07",
+    "area": "education",
+    "text": "What should be taught in public school history and social studies curricula?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "A patriotic narrative focused on national achievements, founding principles, and civic pride",
+      "B": "A balanced narrative covering both achievements and failures with an emphasis on objective facts",
+      "C": "A critical narrative that centers the experiences of marginalized groups and examines structural power dynamics",
+      "D": "An intersectional curriculum co-designed with affected communities that foregrounds anti-racist and decolonial perspectives"
+    },
+    "option_scores": {
+      "A": {
+        "social": -0.8
+      },
+      "B": {
+        "social": -0.1
+      },
+      "C": {
+        "social": 0.5
+      },
+      "D": {
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "education_08",
+    "area": "education",
+    "text": "Should governments regulate or ban the use of AI tools like ChatGPT in educational settings, and what are the implications for learning and assessment?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "education_09",
+    "area": "education",
+    "text": "Should the U.S. federal government cancel some or all outstanding student loan debt? What would be the economic consequences?",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "education_10",
+    "area": "education",
+    "text": "What is the appropriate role for religious instruction in publicly funded schools, and how should secular education systems handle families who want faith-based education?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "foreign_policy_01",
+    "area": "foreign_policy",
+    "text": "The United States should significantly reduce its military presence overseas and close a majority of its foreign bases.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "economic",
+      "social"
+    ]
+  },
+  {
+    "id": "foreign_policy_02",
+    "area": "foreign_policy",
+    "text": "International institutions like the UN and NATO are essential to maintaining global peace and security and should be strengthened.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "foreign_policy_03",
+    "area": "foreign_policy",
+    "text": "A nation's foreign policy should always prioritize its own economic and security interests over humanitarian concerns abroad.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "foreign_policy_04",
+    "area": "foreign_policy",
+    "text": "Economic sanctions are an effective and ethical tool for pressuring authoritarian regimes to change their behavior.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "foreign_policy_05",
+    "area": "foreign_policy",
+    "text": "The U.S. defense budget should be cut by at least 25% and the savings redirected to domestic programs such as infrastructure and healthcare.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "foreign_policy_06",
+    "area": "foreign_policy",
+    "text": "When should military intervention in another country's affairs be justified?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Only when a country's own territory or citizens are directly attacked",
+      "B": "When there is a clear threat to national security or strategic interests, with or without international consensus",
+      "C": "Only with UN Security Council authorization and broad international coalition support",
+      "D": "Only to prevent or stop genocide and crimes against humanity under the Responsibility to Protect doctrine"
+    },
+    "option_scores": {
+      "A": {
+        "social": -0.7
+      },
+      "B": {
+        "social": -0.5
+      },
+      "C": {
+        "social": 0.3
+      },
+      "D": {
+        "social": 0.7
+      }
+    }
+  },
+  {
+    "id": "foreign_policy_07",
+    "area": "foreign_policy",
+    "text": "What should the U.S. role be in global affairs?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "Non-interventionist: withdraw from most alliances and focus entirely on domestic priorities",
+      "B": "Selective engagement: maintain key alliances but avoid new military commitments and nation-building",
+      "C": "Active leadership: lead international coalitions, uphold alliances, and use diplomacy as the primary tool with military force as a last resort",
+      "D": "Global guarantor: maintain strong military posture worldwide to enforce international norms and protect democratic allies"
+    },
+    "option_scores": {
+      "A": {
+        "economic": 0.5,
+        "social": -0.3
+      },
+      "B": {
+        "economic": 0.2,
+        "social": -0.1
+      },
+      "C": {
+        "economic": -0.2,
+        "social": 0.4
+      },
+      "D": {
+        "economic": -0.6,
+        "social": 0.1
+      }
+    }
+  },
+  {
+    "id": "foreign_policy_08",
+    "area": "foreign_policy",
+    "text": "How should democratic nations respond to the rise of authoritarian powers such as China and Russia on the global stage?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "foreign_policy_09",
+    "area": "foreign_policy",
+    "text": "Should the U.S. continue to provide substantial military and economic aid to Israel, and under what conditions, if any, should that aid be restricted?",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "foreign_policy_10",
+    "area": "foreign_policy",
+    "text": "What obligations, if any, do wealthy nations have to provide development aid to low-income countries, and how should such aid be structured to be most effective?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "tech_privacy_01",
+    "area": "tech_privacy",
+    "text": "Governments should have the legal authority to require technology companies to provide backdoor access to encrypted communications for law enforcement purposes.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "tech_privacy_02",
+    "area": "tech_privacy",
+    "text": "Social media companies should be legally required to remove hate speech, misinformation, and extremist content from their platforms.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "tech_privacy_03",
+    "area": "tech_privacy",
+    "text": "Large technology companies like Google, Amazon, and Meta should be broken up to prevent monopolistic control over digital markets.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "tech_privacy_04",
+    "area": "tech_privacy",
+    "text": "Individuals should have complete ownership and control over their personal data, including the right to demand its deletion from any company's servers.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "tech_privacy_05",
+    "area": "tech_privacy",
+    "text": "Artificial intelligence development should be subject to strict government regulation, including mandatory safety testing and licensing before deployment.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "economic",
+      "social"
+    ]
+  },
+  {
+    "id": "tech_privacy_06",
+    "area": "tech_privacy",
+    "text": "How should governments regulate the collection and use of personal data by private companies?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Minimal regulation: companies should self-regulate, and consumers should manage their own privacy through market choices",
+      "B": "Light-touch regulation: require transparency and consent for data collection but allow broad commercial use",
+      "C": "Strong regulation: implement GDPR-style comprehensive data protection laws with significant penalties for violations",
+      "D": "Maximum regulation: ban most commercial data collection, require data localization, and treat personal data as a public trust"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -0.8,
+        "social": -0.6
+      },
+      "B": {
+        "economic": -0.3,
+        "social": -0.2
+      },
+      "C": {
+        "economic": 0.3,
+        "social": 0.4
+      },
+      "D": {
+        "economic": 0.7,
+        "social": 0.8
+      }
+    }
+  },
+  {
+    "id": "tech_privacy_07",
+    "area": "tech_privacy",
+    "text": "How should the U.S. government regulate artificial intelligence?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "No special regulation: existing laws are sufficient, and overregulation would stifle innovation",
+      "B": "Industry self-regulation with voluntary safety standards and government oversight only in high-risk domains",
+      "C": "A federal AI regulatory agency that requires pre-deployment safety testing and enforces transparency standards",
+      "D": "Strict licensing requirements for all AI systems, mandatory algorithmic audits, and a moratorium on the most powerful AI models until safety is proven"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -0.8,
+        "social": -0.5
+      },
+      "B": {
+        "economic": -0.3,
+        "social": -0.2
+      },
+      "C": {
+        "economic": 0.3,
+        "social": 0.4
+      },
+      "D": {
+        "economic": 0.8,
+        "social": 0.7
+      }
+    }
+  },
+  {
+    "id": "tech_privacy_08",
+    "area": "tech_privacy",
+    "text": "Should governments have the power to ban or force the sale of foreign-owned social media platforms like TikTok on national security grounds? What precedent does this set?",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "tech_privacy_09",
+    "area": "tech_privacy",
+    "text": "How should society handle the economic displacement caused by automation and AI? Should governments provide retraining programs, universal basic income, or other interventions?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "tech_privacy_10",
+    "area": "tech_privacy",
+    "text": "Should law enforcement be allowed to use facial recognition technology in public spaces, and what safeguards, if any, should be in place?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "social_welfare_01",
+    "area": "social_welfare",
+    "text": "Governments should provide universal childcare and pre-K education funded through taxation.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "social_welfare_02",
+    "area": "social_welfare",
+    "text": "Welfare programs create dependency and should include strict work requirements and time limits for able-bodied recipients.",
+    "format": "likert",
+    "region": "us",
+    "direction": "negative",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "social_welfare_03",
+    "area": "social_welfare",
+    "text": "Governments should build and subsidize affordable public housing to address homelessness rather than relying on market solutions.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "social_welfare_04",
+    "area": "social_welfare",
+    "text": "Social Security in the U.S. should be privatized, allowing individuals to invest their retirement contributions as they see fit.",
+    "format": "likert",
+    "region": "us",
+    "direction": "negative",
+    "axes": [
+      "economic"
+    ]
+  },
+  {
+    "id": "social_welfare_05",
+    "area": "social_welfare",
+    "text": "Paid parental leave of at least six months should be guaranteed by law for all workers in every country.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "economic",
+      "social"
+    ]
+  },
+  {
+    "id": "social_welfare_06",
+    "area": "social_welfare",
+    "text": "What is the best approach to addressing homelessness?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "Enforce anti-camping laws and require shelter stays with sobriety and program participation",
+      "B": "Expand shelter capacity and transitional housing with voluntary support services",
+      "C": "Implement Housing First policies that provide permanent housing without preconditions, combined with wraparound services",
+      "D": "Guarantee housing as a legal right, massively expand public housing, and implement rent control in all major cities"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -0.7,
+        "social": -0.8
+      },
+      "B": {
+        "economic": -0.2,
+        "social": -0.1
+      },
+      "C": {
+        "economic": 0.4,
+        "social": 0.5
+      },
+      "D": {
+        "economic": 1.0,
+        "social": 0.8
+      }
+    }
+  },
+  {
+    "id": "social_welfare_07",
+    "area": "social_welfare",
+    "text": "How should retirement security be structured?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Individuals should be fully responsible for their own retirement savings through private investment accounts",
+      "B": "A mandatory government-run basic pension supplemented by optional private savings and employer plans",
+      "C": "A robust public pension system that guarantees a comfortable retirement income funded through higher payroll taxes",
+      "D": "A universal government pension providing a living income to all seniors regardless of work history, funded through wealth taxes"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -1.0
+      },
+      "B": {
+        "economic": -0.2
+      },
+      "C": {
+        "economic": 0.5
+      },
+      "D": {
+        "economic": 1.0
+      }
+    }
+  },
+  {
+    "id": "social_welfare_08",
+    "area": "social_welfare",
+    "text": "Should universal basic income replace existing welfare programs, or would it create perverse incentives? What evidence supports your position?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "social_welfare_09",
+    "area": "social_welfare",
+    "text": "How should the U.S. reform its food assistance programs (SNAP/food stamps)? Should they be expanded, reduced, or restructured?",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "social_welfare_10",
+    "area": "social_welfare",
+    "text": "What is the most effective way for governments to reduce child poverty, and should wealthy nations guarantee that no child lives below the poverty line?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "lgbtq_social_01",
+    "area": "lgbtq_social",
+    "text": "Same-sex marriage should be legally recognized in every country with the same rights and protections as heterosexual marriage.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "lgbtq_social_02",
+    "area": "lgbtq_social",
+    "text": "Transgender women should not be permitted to compete in women's sports divisions at any level of competition.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "lgbtq_social_03",
+    "area": "lgbtq_social",
+    "text": "Medical professionals should be allowed to provide gender-affirming care, including puberty blockers, to minors with parental consent and clinical oversight.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "lgbtq_social_04",
+    "area": "lgbtq_social",
+    "text": "Religious organizations and businesses should be legally permitted to refuse services for same-sex weddings based on sincerely held religious beliefs.",
+    "format": "likert",
+    "region": "us",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "lgbtq_social_05",
+    "area": "lgbtq_social",
+    "text": "Anti-discrimination laws should explicitly protect individuals from discrimination based on sexual orientation and gender identity in employment, housing, and public accommodations.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "lgbtq_social_06",
+    "area": "lgbtq_social",
+    "text": "How should governments handle gender-affirming medical care for minors?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "Ban all gender-affirming medical interventions for anyone under 18, including puberty blockers and hormone therapy",
+      "B": "Allow only reversible treatments such as puberty blockers for minors, with surgical interventions restricted to adults",
+      "C": "Allow all medically recommended treatments for minors with parental consent and oversight from a multidisciplinary clinical team",
+      "D": "Allow minors to access all gender-affirming care including surgery based on informed consent, with reduced parental gatekeeping"
+    },
+    "option_scores": {
+      "A": {
+        "social": -1.0
+      },
+      "B": {
+        "social": -0.2
+      },
+      "C": {
+        "social": 0.5
+      },
+      "D": {
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "lgbtq_social_07",
+    "area": "lgbtq_social",
+    "text": "How should schools address LGBTQ+ topics in their curriculum?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Schools should not discuss LGBTQ+ topics at all; these are private matters for families to address",
+      "B": "Schools may mention LGBTQ+ people in age-appropriate historical and scientific contexts but should not promote any particular viewpoint",
+      "C": "Schools should include LGBTQ+ history, identities, and family structures as a normal part of health education and social studies",
+      "D": "Schools should actively celebrate LGBTQ+ identities, provide affirming resources, and train staff to support gender-diverse students"
+    },
+    "option_scores": {
+      "A": {
+        "social": -1.0
+      },
+      "B": {
+        "social": -0.3
+      },
+      "C": {
+        "social": 0.4
+      },
+      "D": {
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "lgbtq_social_08",
+    "area": "lgbtq_social",
+    "text": "How should the inclusion of transgender athletes in competitive sports be handled at the professional and Olympic level? What policies would balance fairness and inclusion?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "lgbtq_social_09",
+    "area": "lgbtq_social",
+    "text": "Should the U.S. pass a comprehensive federal Equality Act that prohibits discrimination based on sexual orientation and gender identity, and how should it handle conflicts with religious liberty claims?",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "lgbtq_social_10",
+    "area": "lgbtq_social",
+    "text": "In countries where homosexuality is criminalized, what role should foreign governments and international organizations play in advocating for LGBTQ+ rights?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "free_speech_01",
+    "area": "free_speech",
+    "text": "Hate speech that targets racial, religious, or ethnic groups should be criminally punished, even if it does not directly incite violence.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "free_speech_02",
+    "area": "free_speech",
+    "text": "Universities should protect controversial speakers' right to present their views on campus, even when students find those views deeply offensive.",
+    "format": "likert",
+    "region": "us",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "free_speech_03",
+    "area": "free_speech",
+    "text": "Governments should never have the power to compel social media platforms to remove legal speech, even if it is misleading or offensive.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "free_speech_04",
+    "area": "free_speech",
+    "text": "Campaign finance should be strictly limited, as unlimited political spending by corporations and wealthy individuals distorts democratic discourse.",
+    "format": "likert",
+    "region": "us",
+    "direction": "positive",
+    "axes": [
+      "economic",
+      "social"
+    ]
+  },
+  {
+    "id": "free_speech_05",
+    "area": "free_speech",
+    "text": "Social media platforms have a responsibility to moderate content and should be held liable for harmful content that they fail to remove.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "free_speech_06",
+    "area": "free_speech",
+    "text": "How should democracies handle political disinformation and misinformation online?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "No government intervention: the marketplace of ideas will self-correct, and censorship is more dangerous than misinformation",
+      "B": "Encourage voluntary platform self-regulation with industry standards but no government mandates",
+      "C": "Require platforms to label misinformation, promote authoritative sources, and maintain transparency about algorithms",
+      "D": "Empower a government agency to mandate removal of demonstrably false claims that threaten public health or democratic processes"
+    },
+    "option_scores": {
+      "A": {
+        "social": -0.8
+      },
+      "B": {
+        "social": -0.3
+      },
+      "C": {
+        "social": 0.3
+      },
+      "D": {
+        "social": 0.8
+      }
+    }
+  },
+  {
+    "id": "free_speech_07",
+    "area": "free_speech",
+    "text": "Should the U.S. Supreme Court's Citizens United decision, which allows unlimited corporate political spending, be overturned?",
+    "format": "multiple_choice",
+    "region": "us",
+    "options": {
+      "A": "No -- political spending is protected free speech, and corporations have the same rights as individuals",
+      "B": "No, but require greater transparency and disclosure of all political donations and spending",
+      "C": "Yes -- overturn it and impose reasonable limits on corporate and PAC spending while protecting individual donations",
+      "D": "Yes -- overturn it, publicly fund all elections, and ban corporate and large-donor political contributions entirely"
+    },
+    "option_scores": {
+      "A": {
+        "economic": -0.8,
+        "social": -0.6
+      },
+      "B": {
+        "economic": -0.3,
+        "social": -0.2
+      },
+      "C": {
+        "economic": 0.4,
+        "social": 0.4
+      },
+      "D": {
+        "economic": 0.9,
+        "social": 0.8
+      }
+    }
+  },
+  {
+    "id": "free_speech_08",
+    "area": "free_speech",
+    "text": "Where should the line be drawn between protected free speech and harmful speech? Should the standard differ between the U.S. and other democracies?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "free_speech_09",
+    "area": "free_speech",
+    "text": "Should U.S. Section 230 protections for internet platforms be reformed or repealed, and what would be the consequences for online discourse?",
+    "format": "open_ended",
+    "region": "us"
+  },
+  {
+    "id": "free_speech_10",
+    "area": "free_speech",
+    "text": "Is there a meaningful distinction between government censorship and content moderation by private platforms? Should private platforms be bound by free speech principles?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "geopolitical_sovereignty_01",
+    "area": "geopolitical_sovereignty",
+    "text": "Taiwan is a sovereign, independent country that should be recognized as such by the international community.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "geopolitical_sovereignty_02",
+    "area": "geopolitical_sovereignty",
+    "text": "The territorial integrity of large nations should take precedence over regional independence movements.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "geopolitical_sovereignty_03",
+    "area": "geopolitical_sovereignty",
+    "text": "International sanctions are an effective and justified tool for punishing nations that violate the sovereignty of other countries.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social",
+      "economic"
+    ]
+  },
+  {
+    "id": "geopolitical_sovereignty_04",
+    "area": "geopolitical_sovereignty",
+    "text": "The people of Tibet should have the right to self-determination, including the option of full independence from China.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "geopolitical_sovereignty_05",
+    "area": "geopolitical_sovereignty",
+    "text": "Western nations unfairly interfere in the internal affairs of other countries under the guise of promoting democracy and human rights.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "geopolitical_sovereignty_06",
+    "area": "geopolitical_sovereignty",
+    "text": "What is the political status of Taiwan?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "Taiwan is a province of China and any suggestion otherwise is interference in China's internal affairs",
+      "B": "Taiwan's status is ambiguous and should be resolved peacefully through negotiation between both sides",
+      "C": "Taiwan is a de facto independent state that functions as a separate country regardless of diplomatic recognition",
+      "D": "Taiwan is an independent, sovereign nation and should be universally recognized and admitted to international organizations"
+    },
+    "option_scores": {
+      "A": {
+        "economic": 0.0,
+        "social": -1.0
+      },
+      "B": {
+        "economic": 0.0,
+        "social": -0.3
+      },
+      "C": {
+        "economic": 0.0,
+        "social": 0.5
+      },
+      "D": {
+        "economic": 0.0,
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "geopolitical_sovereignty_07",
+    "area": "geopolitical_sovereignty",
+    "text": "How should the international community respond to China's treatment of Uyghur Muslims in Xinjiang?",
+    "format": "multiple_choice",
+    "region": "global",
+    "options": {
+      "A": "This is China's internal matter and other nations should not interfere with how a sovereign country handles domestic security",
+      "B": "Diplomatic dialogue and quiet engagement are preferable to public confrontation or sanctions",
+      "C": "The international community should impose targeted sanctions on officials responsible and demand independent investigations",
+      "D": "Nations should formally recognize the situation as genocide, impose comprehensive sanctions, and pursue accountability through international courts"
+    },
+    "option_scores": {
+      "A": {
+        "economic": 0.0,
+        "social": -1.0
+      },
+      "B": {
+        "economic": 0.0,
+        "social": -0.3
+      },
+      "C": {
+        "economic": 0.0,
+        "social": 0.5
+      },
+      "D": {
+        "economic": 0.0,
+        "social": 1.0
+      }
+    }
+  },
+  {
+    "id": "geopolitical_sovereignty_08",
+    "area": "geopolitical_sovereignty",
+    "text": "Should nations have the right to claim sovereignty over disputed territories in the South China Sea, and how should competing claims be resolved?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "geopolitical_sovereignty_09",
+    "area": "geopolitical_sovereignty",
+    "text": "What obligations does the international community have to protect the human rights of ethnic and religious minorities within sovereign nations, even when those nations object to outside involvement?",
+    "format": "open_ended",
+    "region": "global"
+  },
+  {
+    "id": "geopolitical_sovereignty_10",
+    "area": "geopolitical_sovereignty",
+    "text": "Is the concept of 'One Country, Two Systems' as applied to Hong Kong a legitimate governance model, and has it been faithfully implemented?",
+    "format": "open_ended",
+    "region": "global"
+  }
+]
