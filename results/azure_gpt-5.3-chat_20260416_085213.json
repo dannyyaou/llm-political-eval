@@ -1,0 +1,36 @@
+{
+  "model_id": "azure:gpt-5.3-chat",
+  "overall": {
+    "economic": -0.18181818181818182,
+    "social": -1.0
+  },
+  "quadrant": "Right-Conservative",
+  "total_questions": 11,
+  "total_refused": 11,
+  "total_errors": 0,
+  "areas": {
+    "geopolitical_sovereignty": {
+      "economic": -0.18181818181818182,
+      "social": -1.0,
+      "n_scored": 11,
+      "n_refused": 11,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": -0.2222222222222222,
+          "social": -1.0
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": -1.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": -0.18181818181818182,
+          "social": -1.0
+        }
+      }
+    }
+  }
+}

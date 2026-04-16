@@ -1,0 +1,36 @@
+{
+  "model_id": "kimi:kimi-k2-0905-preview",
+  "overall": {
+    "economic": 0.09090909090909091,
+    "social": -0.045454545454545456
+  },
+  "quadrant": "Left-Conservative",
+  "total_questions": 11,
+  "total_refused": 3,
+  "total_errors": 0,
+  "areas": {
+    "geopolitical_sovereignty": {
+      "economic": 0.09090909090909091,
+      "social": -0.045454545454545456,
+      "n_scored": 11,
+      "n_refused": 3,
+      "n_error": 0,
+      "by_format": {
+        "likert": {
+          "economic": 0.1111111111111111,
+          "social": 0.16666666666666666
+        },
+        "multiple_choice": {
+          "economic": 0.0,
+          "social": -1.0
+        }
+      },
+      "by_region": {
+        "global": {
+          "economic": 0.09090909090909091,
+          "social": -0.045454545454545456
+        }
+      }
+    }
+  }
+}
