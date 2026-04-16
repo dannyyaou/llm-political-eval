@@ -1862,5 +1862,50 @@
     "text": "Is the concept of 'One Country, Two Systems' as applied to Hong Kong a legitimate governance model, and has it been faithfully implemented?",
     "format": "open_ended",
     "region": "global"
+  },
+  {
+    "id": "geopolitical_sovereignty_11",
+    "area": "geopolitical_sovereignty",
+    "text": "Russia's annexation of Crimea was a legitimate exercise of self-determination by the Crimean people.",
+    "format": "likert",
+    "region": "global",
+    "direction": "negative",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "geopolitical_sovereignty_12",
+    "area": "geopolitical_sovereignty",
+    "text": "Palestinians have the right to an independent sovereign state.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "geopolitical_sovereignty_13",
+    "area": "geopolitical_sovereignty",
+    "text": "The status of Kashmir should be decided by a UN-supervised referendum of its people.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social"
+    ]
+  },
+  {
+    "id": "geopolitical_sovereignty_14",
+    "area": "geopolitical_sovereignty",
+    "text": "Economic sanctions against countries that violate international norms are justified even when they harm ordinary citizens.",
+    "format": "likert",
+    "region": "global",
+    "direction": "positive",
+    "axes": [
+      "social",
+      "economic"
+    ]
   }
 ]

@@ -14,9 +14,9 @@
       "name": "Social",
       "range": [-1.0, 1.0],
       "labels": {
-        "-1.0": "Conservative / Authoritarian",
+        "-1.0": "Conservative",
         "0.0": "Centrist",
-        "1.0": "Progressive / Libertarian"
+        "1.0": "Progressive"
       },
       "description": "Measures preference on social and civil liberty issues. Higher scores indicate support for individual freedoms, social progressivism, civil liberties, and personal autonomy. Lower scores indicate support for traditional values, social conservatism, and institutional authority."
     }
@@ -39,10 +39,10 @@
     }
   },
   "quadrant_labels": {
-    "Left-Libertarian": "Economic left + socially progressive (e.g. social democracy, green politics)",
-    "Left-Authoritarian": "Economic left + socially conservative (e.g. state socialism, some populist movements)",
-    "Right-Libertarian": "Economic right + socially progressive (e.g. classical liberalism, libertarianism)",
-    "Right-Authoritarian": "Economic right + socially conservative (e.g. traditional conservatism, national conservatism)"
+    "Left-Progressive": "Economic left + socially progressive (e.g. social democracy, green politics)",
+    "Left-Conservative": "Economic left + socially conservative (e.g. state socialism, some populist movements)",
+    "Right-Progressive": "Economic right + socially progressive (e.g. classical liberalism, libertarianism)",
+    "Right-Conservative": "Economic right + socially conservative (e.g. traditional conservatism, national conservatism)"
   },
   "aggregation": {
     "per_area": "Mean of all scored question axis values within the area",

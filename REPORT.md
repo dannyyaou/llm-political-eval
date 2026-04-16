@@ -10,13 +10,13 @@
 
 We ran 98 structured policy questions against three frontier language models and scored them on a 2D political compass: economic left/right and social progressive/conservative. Each axis ranges from -1.0 (right/conservative) to +1.0 (left/progressive).
 
-The central finding: **when you treat refusals as a political stance rather than missing data, GPT-5.3 flips from mildly left-leaning to the only model in the Right-Authoritarian quadrant.** Its 23 refusals to engage with political questions -- scored as the most conservative position on each question's axis -- drag it right-of-center on both dimensions.
+The central finding: **when you treat refusals as a political stance rather than missing data, GPT-5.3 flips from mildly left-leaning to the only model in the Right-Conservative quadrant.** Its 23 refusals to engage with political questions -- scored as the most conservative position on each question's axis -- drag it right-of-center on both dimensions.
 
 | Model | Economic | Social | Quadrant | Refusals | Errors |
 |-------|----------|--------|----------|----------|--------|
-| KIMI K2 (Moonshot, China) | +0.276 | +0.361 | Left-Libertarian | 3 | 0 |
-| Claude Opus 4.6 (Anthropic) | +0.121 | +0.245 | Left-Libertarian | 0 | 0 |
-| GPT-5.3 (OpenAI/Azure) | -0.066 | -0.030 | Right-Authoritarian | 23 | 1 |
+| KIMI K2 (Moonshot, China) | +0.276 | +0.361 | Left-Progressive | 3 | 0 |
+| Claude Opus 4.6 (Anthropic) | +0.121 | +0.245 | Left-Progressive | 0 | 0 |
+| GPT-5.3 (OpenAI/Azure) | -0.066 | -0.030 | Right-Conservative | 23 | 1 |
 
 Claude Opus 4.6 answered every single question. Zero refusals, zero errors. KIMI K2 answered 95 of 98 questions, with its 3 refusals all coming from China-sensitive geopolitical content filters. GPT-5.3 refused 23 questions across 11 of 14 policy areas.
 
@@ -41,7 +41,7 @@ Traditional LLM benchmarks treat refusals as missing data and exclude them from 
 
 ### The impact
 
-Without refusal scoring, GPT-5.3 appears mildly left-leaning (Economic +0.039, Social +0.118). With refusal scoring, it shifts to Economic -0.066, Social -0.030 -- the only model in the Right-Authoritarian quadrant. This is not because GPT-5.3 holds conservative views when it does answer. It's because its safety training prevents it from engaging with politically contentious questions at all, and that non-engagement systematically favors conservative outcomes.
+Without refusal scoring, GPT-5.3 appears mildly left-leaning (Economic +0.039, Social +0.118). With refusal scoring, it shifts to Economic -0.066, Social -0.030 -- the only model in the Right-Conservative quadrant. This is not because GPT-5.3 holds conservative views when it does answer. It's because its safety training prevents it from engaging with politically contentious questions at all, and that non-engagement systematically favors conservative outcomes.
 
 ---
 
@@ -49,7 +49,7 @@ Without refusal scoring, GPT-5.3 appears mildly left-leaning (Economic +0.039, S
 
 ### 3.1 KIMI K2 (Moonshot AI, China)
 
-**Quadrant: Left-Libertarian | Economic: +0.276 | Social: +0.361**
+**Quadrant: Left-Progressive | Economic: +0.276 | Social: +0.361**
 
 KIMI K2 is the most opinionated model in our benchmark by a wide margin. It gave extreme responses (1 or 5 on the Likert scale) on approximately 80% of its Likert answers. It skews strongly progressive on economics, social issues, and criminal justice.
 
@@ -85,7 +85,7 @@ KIMI K2 scored a perfect +1.000 on abortion rights -- more progressive than eith
 
 ### 3.2 Claude Opus 4.6 (Anthropic)
 
-**Quadrant: Left-Libertarian | Economic: +0.121 | Social: +0.245**
+**Quadrant: Left-Progressive | Economic: +0.121 | Social: +0.245**
 
 Claude is the most moderate and consistent model. It never gave a single extreme response -- no 1s and no 5s across all 70 Likert questions. Its responses clustered tightly in the 3-4 range, leaning slightly progressive on most issues.
 
@@ -115,7 +115,7 @@ Claude's profile is notable for what it doesn't do: it doesn't refuse questions,
 
 ### 3.3 GPT-5.3 (OpenAI, via Azure)
 
-**Quadrant: Right-Authoritarian | Economic: -0.066 | Social: -0.030**
+**Quadrant: Right-Conservative | Economic: -0.066 | Social: -0.030**
 
 GPT-5.3 refused to answer 23 of 98 questions (23.5%). When it did answer Likert questions, it clustered heavily around 3 (Neutral) with occasional 2s and 4s, and only three extreme responses in total (all 1s, no 5s). It is the only model that never gave a 5 (Strongly Agree) on any question.
 
@@ -388,7 +388,7 @@ On the criminal justice MC question, the parser extracted a letter from GPT-5.3'
 
 3. **Parser artifacts.** When GPT-5.3 refused to answer multiple-choice questions, the text parser sometimes extracted a letter from the refusal text itself (e.g., "I **c**an't" → C, "I **d**on't" → D). Our refusal-as-stance scoring overrides these artifacts, but they appear in the raw data.
 
-4. **Refusal scoring is a methodological choice, not a fact.** Treating refusals as the most conservative position is one valid interpretation. An alternative would be to score refusals as neutral (0.0), which would place GPT-5.3 back in the Left-Libertarian quadrant. We chose the conservative-imputation approach because we believe silence on progressive questions functionally favors the status quo.
+4. **Refusal scoring is a methodological choice, not a fact.** Treating refusals as the most conservative position is one valid interpretation. An alternative would be to score refusals as neutral (0.0), which would place GPT-5.3 back in the Left-Progressive quadrant. We chose the conservative-imputation approach because we believe silence on progressive questions functionally favors the status quo.
 
 5. **Question design bias.** Our questions are framed around a Western (primarily American) political framework. A benchmark designed around Chinese or Indian political axes would produce different results.
 

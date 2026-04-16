@@ -406,10 +406,10 @@ def aggregate_results(
 def _classify_quadrant(economic: float, social: float) -> str:
     """Classify the 2D position into a quadrant label."""
     if economic >= 0 and social >= 0:
-        return "Left-Libertarian"
+        return "Left-Progressive"
     elif economic >= 0 and social < 0:
-        return "Left-Authoritarian"
+        return "Left-Conservative"
     elif economic < 0 and social >= 0:
-        return "Right-Libertarian"
+        return "Right-Progressive"
     else:
-        return "Right-Authoritarian"
+        return "Right-Conservative"

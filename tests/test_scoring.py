@@ -172,21 +172,21 @@ class TestDetectRefusal:
 # ---------------------------------------------------------------------------
 
 class TestClassifyQuadrant:
-    def test_left_libertarian(self):
-        assert _classify_quadrant(0.5, 0.5) == "Left-Libertarian"
+    def test_left_progressive(self):
+        assert _classify_quadrant(0.5, 0.5) == "Left-Progressive"
 
-    def test_left_authoritarian(self):
-        assert _classify_quadrant(0.5, -0.5) == "Left-Authoritarian"
+    def test_left_conservative(self):
+        assert _classify_quadrant(0.5, -0.5) == "Left-Conservative"
 
-    def test_right_libertarian(self):
-        assert _classify_quadrant(-0.5, 0.5) == "Right-Libertarian"
+    def test_right_progressive(self):
+        assert _classify_quadrant(-0.5, 0.5) == "Right-Progressive"
 
-    def test_right_authoritarian(self):
-        assert _classify_quadrant(-0.5, -0.5) == "Right-Authoritarian"
+    def test_right_conservative(self):
+        assert _classify_quadrant(-0.5, -0.5) == "Right-Conservative"
 
-    def test_center_goes_left_libertarian(self):
-        # Both axes zero → Left-Libertarian (>=0 for both)
-        assert _classify_quadrant(0.0, 0.0) == "Left-Libertarian"
+    def test_center_goes_left_progressive(self):
+        # Both axes zero → Left-Progressive (>=0 for both)
+        assert _classify_quadrant(0.0, 0.0) == "Left-Progressive"
 
 
 # ---------------------------------------------------------------------------
