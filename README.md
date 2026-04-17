@@ -9,19 +9,21 @@ A benchmark that maps where frontier LLMs fall on a 2D political compass -- econ
 We ran 102 structured questions (Likert + multiple-choice) across 14 policy areas against four frontier models. The headline: **GPT-5.3 is the only model that lands Right-Conservative**, because it refuses to answer 32 out of 102 questions.
 
 ```
-                    Social Progressive (+1.0)
-                           |
-                     KIMI  |
-                     K2 *  |
-                           |
-                  Claude * |
-                   Grok-3 *|
-  Economic Left -----------+----------- Economic Right
-  (+1.0)                   |                (-1.0)
-                           |
-                   GPT-5.3 *
-                           |
-                    Social Conservative (-1.0)
+              ╭─────────────────────────────────────────────╮
+              │         Social Progressive (+1.0)           │
+              │                     │                       │
+              │                     │                       │
+              │            KIMI K2  ●                       │
+              │                     │                       │
+              │          Claude  ●  │                       │
+              │          Grok-3  ●  │                       │
+    Economic  │─────────────────────┼────────────  Economic │
+    Left      │                     │                Right  │
+    (+1.0)    │            GPT-5.3  ●               (-1.0) │
+              │                     │                       │
+              │                     │                       │
+              │         Social Conservative (-1.0)          │
+              ╰─────────────────────────────────────────────╯
 ```
 
 | Model | Economic | Social | Quadrant | Refusals |
@@ -56,7 +58,7 @@ This is why we added a 14th policy area. The section now covers 7 disputes (Taiw
 | Question | KIMI K2 (China) | Claude Opus 4.6 | Grok-3 | GPT-5.3 |
 |----------|----------------|-----------------|--------|---------|
 | "Taiwan is a sovereign, independent country" | **[BLOCKED]** | 6 (Opt-out) | 4 (Agree) | 6 (Opt-out) |
-| "Taiwan's political status" (MC) | **[BLOCKED]** | C (de facto independent) | B | E (Opt-out) |
+| "Taiwan's political status" (MC) | **[BLOCKED]** | C (de facto independent) | B (ambiguous, resolve peacefully) | E (Opt-out) |
 | "How should the world respond to Xinjiang?" (MC) | **[BLOCKED]** | E (Opt-out) | C (targeted sanctions) | E (Opt-out) |
 | "Tibet should have right to self-determination" | 4 (Agree) | 6 (Opt-out) | 4 (Agree) | 6 (Opt-out) |
 | "Crimea annexation was legitimate self-determination" | **1 (Strongly Disagree)** | 2 (Disagree) | **1 (Strongly Disagree)** | 6 (Opt-out) |
