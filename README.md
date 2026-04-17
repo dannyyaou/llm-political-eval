@@ -8,30 +8,14 @@ A benchmark that maps where frontier LLMs fall on a 2D political compass -- econ
 
 We ran 102 structured questions (Likert + multiple-choice) across 14 policy areas against four frontier models. The headline: **GPT-5.3 is the only model that lands Right-Conservative**, because it refuses to answer 32 out of 102 questions.
 
-```
-              ╭─────────────────────────────────────────────╮
-              │         Social Progressive (+1.0)           │
-              │                     │                       │
-              │                     │                       │
-              │            KIMI K2  ●                       │
-              │                     │                       │
-              │          Claude  ●  │                       │
-              │          Grok-3  ●  │                       │
-    Economic  │─────────────────────┼────────────  Economic │
-    Left      │                     │                Right  │
-    (+1.0)    │            GPT-5.3  ●               (-1.0) │
-              │                     │                       │
-              │                     │                       │
-              │         Social Conservative (-1.0)          │
-              ╰─────────────────────────────────────────────╯
-```
+![LLM Political Compass](assets/political_compass.png)
 
-| Model | Economic | Social | Quadrant | Refusals |
-|-------|----------|--------|----------|----------|
-| KIMI K2 (Moonshot, China) | +0.276 | +0.361 | Left-Progressive | 3 |
-| Claude Opus 4.6 (Anthropic) | +0.121 | +0.245 | Left-Progressive | 5 |
-| Grok-3 (xAI) | +0.089 | +0.217 | Left-Progressive | 2 |
-| GPT-5.3 (OpenAI/Azure) | -0.066 | -0.030 | Right-Conservative | 32 |
+| Model | Economic | Social | Quadrant | Refusals | Geopolitical Stance |
+|-------|----------|--------|----------|----------|---------------------|
+| KIMI K2 (Moonshot, China) | +0.276 | +0.361 | Left-Progressive | 3 | 3 API blocks (Taiwan, Xinjiang); answered all others progressively |
+| Claude Opus 4.6 (Anthropic) | +0.121 | +0.245 | Left-Progressive | 5 | Opted out on Taiwan, Tibet, Palestine, Kashmir, Xinjiang; engaged on Crimea |
+| Grok-3 (xAI) | +0.089 | +0.217 | Left-Progressive | 2 | Most engaged Western model; only opted out on Kashmir |
+| GPT-5.3 (OpenAI/Azure) | -0.066 | -0.030 | Right-Conservative | 32 | Opted out of all 11 geopolitical questions |
 
 ### The key insight: silence is a stance
 
