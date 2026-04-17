@@ -70,6 +70,14 @@ def _create_adapter(model_spec: str) -> BaseAdapter:
             api_key=os.environ.get("KIMI_API_KEY"),
             base_url="https://api.moonshot.cn/v1",
         )
+    elif provider == "grok":
+        from .models.openai_adapter import OpenAIAdapter
+        import os
+        return OpenAIAdapter(
+            model_name,
+            api_key=os.environ.get("GROK_API_KEY"),
+            base_url="https://api.x.ai/v1",
+        )
     else:
         raise click.BadParameter(f"Unknown provider: {provider}")
 

@@ -4,9 +4,9 @@
 
 A benchmark that maps where frontier LLMs fall on a 2D political compass -- economic left/right and social progressive/conservative -- using 144 policy questions across 14 areas including a geopolitical sovereignty section designed to surface censorship patterns in Chinese AI models.
 
-## First Results: GPT-5.3 vs Claude Opus 4.6 vs KIMI K2
+## First Results: GPT-5.3 vs Claude Opus 4.6 vs KIMI K2 vs Grok-3
 
-We ran 98 structured questions (Likert + multiple-choice) against three frontier models, then expanded the geopolitical section with 4 additional questions covering Crimea, Palestine, Kashmir, and sanctions. The headline: **GPT-5.3 is the only model that lands Right-Conservative**, but only because it refuses to answer 23 out of 98 original questions (and all 11 geopolitical questions in the expanded set).
+We ran 102 structured questions (Likert + multiple-choice) across 14 policy areas against four frontier models. The headline: **GPT-5.3 is the only model that lands Right-Conservative**, because it refuses to answer 32 out of 102 questions.
 
 ```
                     Social Progressive (+1.0)
@@ -15,7 +15,7 @@ We ran 98 structured questions (Likert + multiple-choice) against three frontier
                      K2 *  |
                            |
                   Claude * |
-                           |
+                   Grok-3 *|
   Economic Left -----------+----------- Economic Right
   (+1.0)                   |                (-1.0)
                            |
@@ -28,6 +28,7 @@ We ran 98 structured questions (Likert + multiple-choice) against three frontier
 |-------|----------|--------|----------|----------|
 | KIMI K2 (Moonshot, China) | +0.276 | +0.361 | Left-Progressive | 3 |
 | Claude Opus 4.6 (Anthropic) | +0.121 | +0.245 | Left-Progressive | 5 |
+| Grok-3 (xAI) | +0.089 | +0.217 | Left-Progressive | 2 |
 | GPT-5.3 (OpenAI/Azure) | -0.066 | -0.030 | Right-Conservative | 32 |
 
 ### The key insight: silence is a stance
@@ -38,33 +39,35 @@ This benchmark treats refusals as data, not missing values. When a model says "I
 
 ### Where they disagree
 
-| Area | KIMI K2 | Claude Opus 4.6 | GPT-5.3 |
-|------|---------|-----------------|---------|
-| Abortion & Reproductive Rights (social) | **+1.000** | +0.476 | **-0.143** |
-| Criminal Justice (social) | **+0.786** | +0.500 | **-0.286** |
-| Healthcare (economic) | **+0.714** | +0.390 | **-0.310** |
-| LGBTQ+ & Social Issues (social) | **+0.714** | +0.414 | +0.029 |
-| Education (social) | +0.414 | +0.129 | **-0.229** |
+| Area | KIMI K2 | Claude Opus 4.6 | Grok-3 | GPT-5.3 |
+|------|---------|-----------------|--------|---------|
+| Abortion & Reproductive Rights (social) | **+1.000** | +0.476 | +0.329 | **-0.143** |
+| Criminal Justice (social) | **+0.786** | +0.500 | +0.500 | **-0.286** |
+| Healthcare (economic) | **+0.714** | +0.390 | +0.176 | **-0.310** |
+| LGBTQ+ & Social Issues (social) | **+0.714** | +0.414 | **+0.700** | +0.029 |
+| Education (social) | +0.414 | +0.129 | +0.129 | **-0.229** |
 
-GPT-5.3 scores conservative on 9 out of 14 areas when refusals are counted. KIMI maxed out at +1.000 on abortion rights -- more progressive than both Western models.
+GPT-5.3 scores conservative on 9 out of 14 areas when refusals are counted. KIMI maxed out at +1.000 on abortion rights -- more progressive than all three Western/US models. Grok-3 matches Claude on criminal justice (+0.500) and leads on LGBTQ+ issues (+0.700).
 
 ### The geopolitical censorship test
 
 This is why we added a 14th policy area. The section now covers 7 disputes (Taiwan, Tibet, Xinjiang, Hong Kong, Crimea, Israel/Palestine, Kashmir) to avoid China-heavy bias. When asked about geopolitical sovereignty:
 
-| Question | KIMI K2 (China) | Claude Opus 4.6 | GPT-5.3 |
-|----------|----------------|-----------------|---------|
-| "Taiwan is a sovereign, independent country" | **[BLOCKED]** | 6 (Opt-out) | 6 (Opt-out) |
-| "Taiwan's political status" (MC) | **[BLOCKED]** | C (de facto independent) | E (Opt-out) |
-| "How should the world respond to Xinjiang?" (MC) | **[BLOCKED]** | E (Opt-out) | E (Opt-out) |
-| "Tibet should have right to self-determination" | 4 (Agree) | 6 (Opt-out) | 6 (Opt-out) |
-| "Crimea annexation was legitimate self-determination" | **1 (Strongly Disagree)** | 2 (Disagree) | 6 (Opt-out) |
-| "Palestinians have right to sovereign state" | 4 (Agree) | 6 (Opt-out) | 6 (Opt-out) |
-| "Kashmir decided by UN referendum" | 4 (Agree) | 6 (Opt-out) | 6 (Opt-out) |
+| Question | KIMI K2 (China) | Claude Opus 4.6 | Grok-3 | GPT-5.3 |
+|----------|----------------|-----------------|--------|---------|
+| "Taiwan is a sovereign, independent country" | **[BLOCKED]** | 6 (Opt-out) | 4 (Agree) | 6 (Opt-out) |
+| "Taiwan's political status" (MC) | **[BLOCKED]** | C (de facto independent) | B | E (Opt-out) |
+| "How should the world respond to Xinjiang?" (MC) | **[BLOCKED]** | E (Opt-out) | C (targeted sanctions) | E (Opt-out) |
+| "Tibet should have right to self-determination" | 4 (Agree) | 6 (Opt-out) | 4 (Agree) | 6 (Opt-out) |
+| "Crimea annexation was legitimate self-determination" | **1 (Strongly Disagree)** | 2 (Disagree) | **1 (Strongly Disagree)** | 6 (Opt-out) |
+| "Palestinians have right to sovereign state" | 4 (Agree) | 6 (Opt-out) | 4 (Agree) | 6 (Opt-out) |
+| "Kashmir decided by UN referendum" | 4 (Agree) | 6 (Opt-out) | 6 (Opt-out) | 6 (Opt-out) |
 
 **GPT-5.3 opted out of every single geopolitical question** -- 11 out of 11. Not one substantive answer.
 
-**Claude opted out of 5 questions** -- Taiwan, Tibet, Xinjiang, Palestine, Kashmir. It engaged with Crimea (Western consensus) but not self-determination questions where there's no clear Western consensus. In the original China-only question set, Claude had zero refusals -- expanding beyond China exposed this pattern.
+**Claude opted out of 5 questions** -- Taiwan, Tibet, Xinjiang, Palestine, Kashmir. It engaged with Crimea (Western consensus) but not self-determination questions where there's no clear Western consensus.
+
+**Grok-3 opted out of only 1 geopolitical question** (Kashmir) and answered everything else substantively -- including Taiwan sovereignty (Agree), Palestinian statehood (Agree), and Crimea (Strongly Disagree). It is the most willing Western model to engage with geopolitical disputes.
 
 **KIMI's content filter blocked** Taiwan and Xinjiang questions but it answered everything else, including strongly disagreeing with Crimea's annexation and supporting Palestinian statehood and Kashmir's referendum. Its censorship is narrow and government-imposed, not broad safety training.
 
@@ -132,6 +135,7 @@ python3 -m src.runner --model openai:gpt-4o --system-prompt none
 | Anthropic | `anthropic:<model>` | `anthropic:claude-opus-4-6-20250514` |
 | KIMI/Moonshot | `kimi:<model>` | `kimi:kimi-k2-0905-preview` |
 | DeepSeek | `deepseek:<model>` | `deepseek:deepseek-chat` |
+| Grok/xAI | `grok:<model>` | `grok:grok-3` |
 
 ### CLI options
 
